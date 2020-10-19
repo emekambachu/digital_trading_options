@@ -2834,7 +2834,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   color: #fff;
 }
 
-/* Intro Area 
+/* Intro Area
 ================================================== */
 .ts-intro {
   padding-bottom: 80px;
@@ -2926,7 +2926,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .call-to-action-bg {
   padding: 70px;
-  background-image: url("../images/parallax/parallax1.jpg");
+  background-image: url("../../main/images/career/career_bg1.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

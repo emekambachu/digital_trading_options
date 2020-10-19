@@ -73,7 +73,7 @@ Home
 
                 <!-- Col end-->
                 <div class="col-lg-6 text-md-center mrt-40">
-                    <img class="img-fluid" src="{{ asset('main/images/pages/work_circle.png') }}" alt="">
+                    <img class="img-fluid" src="{{ asset('main/home/h1.jpg') }}" alt="">
                 </div>
                 <!-- Col end-->
 
@@ -96,74 +96,69 @@ Home
                 <div class="col-lg-4 col-md-12">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img class="img-fluid" src="{{ asset('main/images/services/service1.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('main/services/crypto.jpg') }}" alt="">
                         </div>
                         <div class="ts-service-content">
                         <span class="ts-service-icon">
                            <i class="icon icon-pie-chart2"></i>
                         </span>
-                            <h3 class="service-title">Financial Planning</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, forward thinking
-                                tea such as stocks.</p>
-                            <p><a class="link-more" href="#">Read More <i class="icon icon-right-arrow2"></i></a></p>
+                            <h3 class="service-title">Cryptocurrencies</h3>
+                            <p>Cryptocurrency is the future and with awesome rates and the best trading team, we help grow your crypto currencies with diversified portfolios across various market.</p>
                         </div>
                     </div>
                     <!-- Service1 end-->
                 </div>
+
                 <!-- Col 1 end-->
                 <div class="col-lg-4 col-md-12">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img class="img-fluid" src="{{ asset('main/images/services/service2.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('main/services/serv1.jpg') }}" alt="">
                         </div>
                         <div class="ts-service-content">
                         <span class="ts-service-icon">
                            <i class="icon icon-tax"></i>
                         </span>
-                            <h3 class="service-title">Tax Planning</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, forward thinking
-                                tea such as stocks.</p>
-                            <p><a class="link-more" href="#">Read More <i class="icon icon-right-arrow2"></i></a></p>
+                            <h3 class="service-title">Forex</h3>
+                            <p>Options for investing cash including certificates of deposit and the money market funds. With CDs. </p>
                         </div>
                     </div>
                     <!-- Service2 end-->
                 </div>
                 <!-- Col 2 end-->
+
                 <div class="col-lg-4 col-md-12">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img class="img-fluid" src="{{ asset('main/images/services/service3.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('main/services/options_trading.jpg') }}" alt="">
                         </div>
                         <div class="ts-service-content">
                         <span class="ts-service-icon">
                            <i class="icon icon-savings"></i>
                         </span>
-                            <h3 class="service-title">Saving Strategy</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, forward thinking
-                                tea such as stocks.</p>
-                            <p><a class="link-more" href="#">Read More <i class="icon icon-right-arrow2"></i></a></p>
+                            <h3 class="service-title">Option Trading</h3>
+                            <p>We offer the best Forex and Options trading services operating closely with an expert team.</p>
                         </div>
                     </div>
                     <!-- Service3 end-->
                 </div>
                 <!-- Col 3 end-->
             </div>
+
             <!-- Content 1 row end-->
             <div class="gap-60"></div>
             <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img class="img-fluid" src="{{ asset('main/images/services/service4.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('main/services/asset_management.jpg') }}" alt="">
                         </div>
                         <div class="ts-service-content">
                         <span class="ts-service-icon">
                            <i class="icon icon-mutual-fund"></i>
                         </span>
-                            <h3 class="service-title">Mutual Funds</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, forward thinking
-                                tea such as stocks.</p>
-                            <p><a class="link-more" href="#">Read More <i class="icon icon-right-arrow2"></i></a></p>
+                            <h3 class="service-title">Asset Management</h3>
+                            <p>With the best team of Financial and asset managers, you are assured on important projects, construction, contracts, and other assets. We invests pooled funds from clients, putting the capital to work through different investments including stocks, bonds, real estate, master limited partnerships, and more.</p>
                         </div>
                     </div>
                     <!-- Service4 end-->
@@ -172,34 +167,31 @@ Home
                 <div class="col-lg-4 col-md-12">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img class="img-fluid" src="{{ asset('main/images/services/service5.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('main/services/commodities.jpg') }}" alt="">
                         </div>
                         <div class="ts-service-content">
                         <span class="ts-service-icon">
                            <i class="icon icon-loan"></i>
                         </span>
-                            <h3 class="service-title">Business Loan</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, forward thinking
-                                tea such as stocks.</p>
-                            <p><a class="link-more" href="#">Read More <i class="icon icon-right-arrow2"></i></a></p>
+                            <h3 class="service-title">Commodities</h3>
+                            <p>A commodity is a basic of good used in commerce that is interchangeable with other commodities or known currencies. We offer the best the market has to offer and always put our customers first in all decisions.</p>
                         </div>
                     </div>
                     <!-- Service5 end-->
                 </div>
+
                 <!-- Col 5 end-->
                 <div class="col-lg-4 col-md-12">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img class="img-fluid" src="{{ asset('main/images/services/service6.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('main/services/funds_management.jpg') }}" alt="">
                         </div>
                         <div class="ts-service-content">
                         <span class="ts-service-icon">
                            <i class="icon icon-consult"></i>
                         </span>
-                            <h3 class="service-title">Insurance Consulting</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, forward thinking
-                                tea such as stocks.</p>
-                            <p><a class="link-more" href="#">Read More <i class="icon icon-right-arrow2"></i></a></p>
+                            <h3 class="service-title">Funds Management</h3>
+                            <p>Our team can be found working in fund management with mutual funds, pension funds, trust funds, and hedge funds. Our managers generally oversee mutual funds or pensions and manage their direction. study trends in the market, analyze economic data, and stay current on company news.</p>
                         </div>
                     </div>
                     <!-- Service6 end-->
@@ -207,6 +199,189 @@ Home
                 <!-- Col 6 end-->
             </div>
             <!-- Content Row 2 end-->
+        </div>
+        <!-- Container end-->
+    </section>
+
+    <section id="call-to-action" class="call-to-action-bg bg-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 align-self-center">
+                    <h3 class="call-to-action-title">Forex Cross Rates</h3>
+
+                    <div class="tradingview-widget-container" style="width: 1100px; height: 400px;">
+                        <iframe scrolling="no" allowtransparency="true" style="box-sizing: border-box; height: calc(368px); width: 1100px;" src="https://s.tradingview.com/embed-widget/forex-cross-rates/?locale=en#%7B%22width%22%3A1100%2C%22height%22%3A400%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22CHF%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%5D%2C%22isTransparent%22%3Afalse%2C%22colorTheme%22%3A%22light%22%2C%22utm_source%22%3A%22digitalmetricsinvest.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22forex-cross-rates%22%7D" frameborder="0"></iframe>
+
+                        <style>
+                            .tradingview-widget-copyright {
+                                font-size: 13px !important;
+                                line-height: 32px !important;
+                                text-align: center !important;
+                                vertical-align: middle !important;
+                                font-family: 'Trebuchet MS', Arial, sans-serif !important;
+                                color: #9db2bd !important;
+                            }
+
+                            .tradingview-widget-copyright .blue-text {
+                                color: #2196f3 !important;
+                            }
+
+                            .tradingview-widget-copyright a {
+                                text-decoration: none !important;
+                                color: #9db2bd !important;
+                            }
+
+                            .tradingview-widget-copyright a:visited {
+                                color: #9db2bd !important;
+                            }
+
+                            .tradingview-widget-copyright a:hover .blue-text {
+                                color: #38acdb !important;
+                            }
+
+                            .tradingview-widget-copyright a:active .blue-text {
+                                color: #299dcd !important;
+                            }
+
+                            .tradingview-widget-copyright a:visited .blue-text {
+                                color: #2196f3 !important;
+                            }
+                        </style></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ts-services solid-bg" id="ts-services">
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-lg-12">
+                    <h2 class="section-title border-title-left">Investment Strategies</h2>
+                    <p>Digital Trading Options seeks to invest in assets that offer the potential for highly attractive risk adjusted returns. We will continue to focus primarily on:</p>
+                </div>
+            </div>
+            <!-- Title row end-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="featured-tab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item"><a class="nav-link animated fadeIn" href="#tab_one" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-pie-chart2"></i></span><span class="tab-text-title">Best Consulting</span></span></a></li>
+                            <!-- list 1 end-->
+                            <li class="nav-item"><a class="nav-link animated fadeIn active show" href="#tab_two" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-loan"></i></span><span class="tab-text-title">Market Growth</span></span></a></li>
+                            <!-- list 2 end-->
+                            <li class="nav-item"><a class="nav-link animated fadeIn" href="#tab_three" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-savings"></i></span><span class="tab-text-title">Saving Strategy</span></span></a></li>
+                            <!-- list 3 end-->
+                            <li class="nav-item"><a class="nav-link animated fadeIn" href="#tab_four" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-consult"></i></span><span class="tab-text-title">Best Consulting</span></span></a></li>
+                            <!-- list 4 end-->
+                        </ul>
+                        <!-- Nav-tabs end-->
+                        <div class="tab-content">
+                            <div class="tab-pane animated fadeInRight" id="tab_one">
+                                <div class="row">
+                                    <div class="col-lg-4 align-self-center">
+                                        <div class="bg-contain-verticle" style="background-image:url({{ asset('main/images/tabs/tab-shape.png') }});">
+                                            <img class="img-center img-fluid" src="{{ asset('main/images/tabs/img1.png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Col end-->
+                                    <div class="col-lg-8">
+                                        <div class="tab-content-info">
+                                            <h3 class="tab-content-title">Solution for your Financial needs</h3>
+                                            <p>Compelling opportunities in strong secondary markets to capitalize on the changing demographics, preferences, and supply/demand imbalances through investments in Equity, Bonds, Crypto currency, Forex.</p>
+                                        </div>
+                                        <!-- Tab content info end-->
+                                    </div>
+                                    <!-- Col end-->
+                                </div>
+                                <!-- Row end-->
+                            </div>
+                            <!-- Tab pane 1 end-->
+                            <div class="tab-pane animated fadeInRight active show" id="tab_two">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="tab-content-info">
+                                            <h3 class="tab-content-title">We provide loan to Financial Needs</h3>
+                                            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium.</p><a class="btn-light" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- Tab content info end-->
+                                    </div>
+                                    <!-- Col end-->
+                                    <div class="col-lg-4 align-self-center">
+                                        <div class="bg-contain-verticle align-self-center" style="background-image:url(images/tabs/tab-shape.png);">
+                                            <img class="img-center img-fluid" src="images/tabs/img2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Col end-->
+                                </div>
+                                <!-- Row end-->
+                            </div>
+                            <!-- Tab pane 2 end-->
+                            <div class="tab-pane animated fadeInRight" id="tab_three">
+                                <div class="row">
+                                    <div class="col-lg-4 align-self-center">
+                                        <div class="bg-contain-verticle" style="background-image:url(images/tabs/tab-shape.png);">
+                                            <img class="img-center img-fluid" src="images/tabs/img3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Col end-->
+                                    <div class="col-lg-8">
+                                        <div class="tab-content-info">
+                                            <h3 class="tab-content-title">Register for online invoicing</h3>
+                                            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium.</p><a class="btn-light" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- Tab content info end-->
+                                    </div>
+                                    <!-- Col end-->
+                                </div>
+                                <!-- Row end-->
+                            </div>
+                            <!-- Tab pane 3 end-->
+                            <div class="tab-pane animated fadeInRight" id="tab_four">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="tab-content-info">
+                                            <h3 class="tab-content-title">We Provide Insurance Solutions</h3>
+                                            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium.</p><a class="btn-light" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <!-- Tab content info end-->
+                                    </div>
+                                    <!-- Col end-->
+                                    <div class="col-lg-4 align-self-center">
+                                        <div class="bg-contain-verticle" style="background-image:url(images/tabs/tab-shape.png);">
+                                            <img class="img-center img-fluid" src="images/tabs/img4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Col end-->
+                                </div>
+                                <!-- Row end-->
+                            </div>
+                            <!-- Tab pane 3 end-->
+                        </div>
+                        <!-- tab content-->
+                        <div class="gap-60"></div>
+                        <div class="text-center"><a class="btn btn-primary" href="#"> Check More Services</a></div>
+                    </div>
+                    <!-- Schedule tab end-->
+                </div>
+                <!-- Col end-->
+            </div>
+            <!-- Content row end-->
         </div>
         <!-- Container end-->
     </section>
