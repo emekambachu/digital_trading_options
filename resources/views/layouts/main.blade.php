@@ -136,13 +136,6 @@
                             <!--Nav ul end-->
                         </div>
                     </nav>
-                    <!-- Collapse end-->
-                    <div class="nav-search"><span id="search"><i class="icon icon-search"></i></span></div>
-                    <!-- Search end-->
-                    <div class="search-block" style="display: none;">
-                        <input class="form-control" type="text" placeholder="Search"><span class="search-close">×</span>
-                    </div>
-                    <!-- Site search end-->
                 </div>
                 <!-- Site nav inner end-->
             </div>
@@ -208,16 +201,13 @@
                     <div class="col-lg-4 col-md-12 footer-widget">
                         <h3 class="widget-title">Useful Links</h3>
                         <ul class="list-dash">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Our Blog</a></li>
-                            <li><a href="#">Why Need Agent?</a></li>
-                            <li><a href="#">Investments</a></li>
-                            <li><a href="#">Consultation</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="{{ url('/') }}">Home</a></li>
+                            <li><a href="#">Investment Plans</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Legal</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-12W footer-widget">
@@ -246,11 +236,9 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="footer-menu">
                             <ul class="nav unstyled">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Investors</a></li>
-                                <li><a href="#">Legals</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Legal</a></li>
+                                <li><a href="#">FAQ</a></li>
                             </ul>
                         </div>
                     </div>

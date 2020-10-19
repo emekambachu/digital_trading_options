@@ -6,18 +6,16 @@ Home
 
 @section('contents')
     <div id="box-slide" class="owl-carousel owl-theme page-slider mrt-140">
-        <div class="item" style="background-image:url({{ asset('main/images/slider/bg4.jpg') }})">
+        <div class="item" style="background-image:url({{ asset('main/slider/slide1.jpg') }})">
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text animated">
-                        <h2 class="box-slide-title">27 Years Young</h2>
-                        <h3 class="box-slide-sub-title">To Change Your World</h3>
-                        <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent
-                            like.
-                        </p>
+                        <h2 class="box-slide-title">WELCOME TO</h2>
+                        <h3 class="box-slide-sub-title">DIGITAL TRADING OPTIONS</h3>
+                        <p class="box-slide-description">Enjoy the best rates from your Cryptocurrency Investments</p>
                         <p>
-                            <a href="#" class="slider btn btn-primary">Our Service</a>
-                            <a href="#" class="slider btn btn-border">Contact Us</a>
+                            <a href="{{ route('register') }}" class="slider btn btn-primary">Sign up</a>
+                            <a href="{{ route('login') }}" class="slider btn btn-border">Login</a>
                         </p>
                     </div>
                 </div>
@@ -26,18 +24,17 @@ Home
         </div>
         <!-- Item 1 end -->
 
-        <div class="item" style="background-image:url({{ asset('main/images/slider/bg5.jpg') }})">
+        <div class="item" style="background-image:url({{ asset('main/slider/slide2.jpg') }})">
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text animated">
-                        <h2 class="box-slide-title">We are the Leader</h2>
-                        <h3 class="box-slide-sub-title">In Finance Industry</h3>
-                        <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent
-                            like.
+                        <h2 class="box-slide-title">We are the Leaders</h2>
+                        <h3 class="box-slide-sub-title">of the cryptocurrency Investment Industry</h3>
+                        <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking to manage your investment portfolio
                         </p>
                         <p>
-                            <a href="#" class="slider btn btn-primary">Know Us</a>
-                            <a href="#" class="slider btn btn-border">Contact Us</a>
+                            <a href="{{ url('about') }}" class="slider btn btn-primary">About us</a>
+                            <a href="{{ url('services') }}" class="slider btn btn-border">Services</a>
                         </p>
                     </div>
                 </div>
@@ -45,18 +42,16 @@ Home
         </div>
         <!-- Item 2 end -->
 
-        <div class="item" style="background-image:url({{ asset('main/images/slider/bg6.jpg') }})">
+        <div class="item" style="background-image:url({{ asset('main/slider/slide3.jpg') }})">
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text animated">
-                        <h2 class="box-slide-title">To Reach more People</h2>
+                        <h2 class="box-slide-title">Tell us what you need</h2>
                         <h3 class="box-slide-sub-title">We Care our Customers</h3>
-                        <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent
-                            like.
-                        </p>
+                        <p class="box-slide-description">Our Customer care team are ready to solve your financial problems via our live chat</p>
                         <p>
-                            <a href="#" class="slider btn btn-primary">Get a Quote</a>
-                            <a href="#" class="slider btn btn-border">Contact Us</a>
+                            <a href="{{ url('contact') }}" class="slider btn btn-primary">Contact us</a>
+{{--                            <a href="#" class="slider btn btn-border">Contact Us</a>--}}
                         </p>
                     </div>
                 </div>
@@ -70,30 +65,18 @@ Home
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 about-desc">
-                    <h2 class="column-title title-small"><span>About us</span>Different kind of Financial firm</h2>
-                    <p>The mission of the Bizipress Financial Planning Association is to setup, promote and implement high quality
-                        standards for competence and ethical behavior for the financial advisory sector.</p>
+                    <h2 class="column-title title-small"><span>About us</span>Digital Trading Options</h2>
+                    <p>We are a value-oriented investment firm that applies a private equity approach to investing in the public markets. Digital Trading Options manages long and Short term capital for Private investors, endowments, foundations, family, offices and other institutional investors.<br>
+                        We invest in a concentrated long/short portfolio of equity securities of small to middle market companies. This strategy is the core of Digital Trading Options’s activities and has the flexibility to take advantage of the best public and private opportunities in this segment of the market. Digital Trading Options seeks to achieve investment gains through traditional trading with best rate in the the market.</p>
                     <div class="gap-15"></div>
-                    <p>It’s an approach that consistently drives best decisions. And Bizipress, we carry out those decisions free
-                        from the pressure of product bias.</p>
-                    <div class="ceo-signature">
-                        <div class="ceo-desc">
-                            <img class="img-fluid" src="{{ asset('main/images/pages/profile_image.png') }}" alt="">
-                            <div class="ceo-designation">
-                                <p>Daniel Statham</p>
-                                <small>CEO Bizipress</small>
-                            </div>
-                        </div>
-                        <!-- Desc End-->
-                        <img class="img-fluid" src="{{ asset('main/images/pages/sign.png') }}" alt="">
-                    </div>
-                    <!-- Signature End-->
                 </div>
+
                 <!-- Col end-->
                 <div class="col-lg-6 text-md-center mrt-40">
                     <img class="img-fluid" src="{{ asset('main/images/pages/work_circle.png') }}" alt="">
                 </div>
                 <!-- Col end-->
+
             </div>
             <!-- Main row end-->
         </div>

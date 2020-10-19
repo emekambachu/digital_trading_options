@@ -30,6 +30,18 @@ Route::get('contact', static function () {
     return view('contact');
 });
 
+Route::get('terms', static function () {
+    return view('terms');
+});
+
+Route::get('legal', static function () {
+    return view('legal');
+});
+
+Route::get('faq', static function () {
+    return view('faq');
+});
+
 Route::get('registration-complete', static function () {
     return view('registration-complete');
 });
