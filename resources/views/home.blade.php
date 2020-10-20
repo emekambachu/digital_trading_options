@@ -266,7 +266,7 @@ Home
                 <div class="col-lg-12">
                     <div class="featured-tab">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item"><a class="nav-link animated fadeIn" href="#tab_one" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-pie-chart2"></i></span><span class="tab-text-title">Best Consulting</span></span></a></li>
+                            <li class="nav-item"><a class="nav-link animated fadeIn" href="#tab_one" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-pie-chart2"></i></span><span class="tab-text-title">Financial Consulting</span></span></a></li>
                             <!-- list 1 end-->
                             <li class="nav-item"><a class="nav-link animated fadeIn active show" href="#tab_two" data-toggle="tab"><span class="tab-head"><span><i class="icon icon-loan"></i></span><span class="tab-text-title">Market Growth</span></span></a></li>
                             <!-- list 2 end-->
@@ -287,7 +287,7 @@ Home
                                     <!-- Col end-->
                                     <div class="col-lg-8">
                                         <div class="tab-content-info">
-                                            <h3 class="tab-content-title">Solution for your Financial needs</h3>
+                                            <h3 class="tab-content-title">Opportunities for your Financial needs</h3>
                                             <p>Compelling opportunities in strong secondary markets to capitalize on the changing demographics, preferences, and supply/demand imbalances through investments in Equity, Bonds, Crypto currency, Forex.</p>
                                         </div>
                                         <!-- Tab content info end-->
@@ -301,20 +301,15 @@ Home
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="tab-content-info">
-                                            <h3 class="tab-content-title">We provide loan to Financial Needs</h3>
-                                            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                                                error sit voluptatem accusantium doloremque laudantium.</p><a class="btn-light" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                            <h3 class="tab-content-title">We provide Equity</h3>
+                                            <p>Investments with more modest equity requirements ($5 to $95 million) that are often avoided by larger institutional investment funds.</p>
                                         </div>
                                         <!-- Tab content info end-->
                                     </div>
                                     <!-- Col end-->
                                     <div class="col-lg-4 align-self-center">
-                                        <div class="bg-contain-verticle align-self-center" style="background-image:url(images/tabs/tab-shape.png);">
-                                            <img class="img-center img-fluid" src="images/tabs/img2.png" alt="">
+                                        <div class="bg-contain-verticle align-self-center" style="background-image:url({{ asset('main/images/tabs/tab-shape.png') }});">
+                                            <img class="img-center img-fluid" src="{{ asset('main/images/tabs/img2.png') }}" alt="">
                                         </div>
                                     </div>
                                     <!-- Col end-->
@@ -325,20 +320,16 @@ Home
                             <div class="tab-pane animated fadeInRight" id="tab_three">
                                 <div class="row">
                                     <div class="col-lg-4 align-self-center">
-                                        <div class="bg-contain-verticle" style="background-image:url(images/tabs/tab-shape.png);">
-                                            <img class="img-center img-fluid" src="images/tabs/img3.png" alt="">
+                                        <div class="bg-contain-verticle"
+                                             style="background-image:url({{ asset('main/images/tabs/tab-shape.png') }});">
+                                            <img class="img-center img-fluid" src="{{ asset('main/images/tabs/img3.png') }}" alt="">
                                         </div>
                                     </div>
                                     <!-- Col end-->
                                     <div class="col-lg-8">
                                         <div class="tab-content-info">
-                                            <h3 class="tab-content-title">Register for online invoicing</h3>
-                                            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                                                error sit voluptatem accusantium doloremque laudantium.</p><a class="btn-light" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                            <h3 class="tab-content-title">Market Performance</h3>
+                                            <p>Growth markets including strong middle markets exhibiting job creation and stable economic performance.</p>
                                         </div>
                                         <!-- Tab content info end-->
                                     </div>
@@ -352,19 +343,15 @@ Home
                                     <div class="col-lg-8">
                                         <div class="tab-content-info">
                                             <h3 class="tab-content-title">We Provide Insurance Solutions</h3>
-                                            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                                                error sit voluptatem accusantium doloremque laudantium.</p><a class="btn-light" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                            <p>Distressed opportunities including non-performing loans, bank owned assets, and equity recapitalization.</p>
                                         </div>
                                         <!-- Tab content info end-->
                                     </div>
                                     <!-- Col end-->
                                     <div class="col-lg-4 align-self-center">
-                                        <div class="bg-contain-verticle" style="background-image:url(images/tabs/tab-shape.png);">
-                                            <img class="img-center img-fluid" src="images/tabs/img4.png" alt="">
+                                        <div class="bg-contain-verticle"
+                                             style="background-image:url({{ asset('main/images/tabs/tab-shape.png') }});">
+                                            <img class="img-center img-fluid" src="{{ asset('main/images/tabs/img4.png') }}" alt="">
                                         </div>
                                     </div>
                                     <!-- Col end-->
@@ -374,8 +361,6 @@ Home
                             <!-- Tab pane 3 end-->
                         </div>
                         <!-- tab content-->
-                        <div class="gap-60"></div>
-                        <div class="text-center"><a class="btn btn-primary" href="#"> Check More Services</a></div>
                     </div>
                     <!-- Schedule tab end-->
                 </div>
@@ -386,7 +371,7 @@ Home
         <!-- Container end-->
     </section>
 
-    <section class="ts-facts-area solid-bg no-padding" id="ts-facts-area">
+    <section class="ts-facts-area no-padding" id="ts-facts-area" style="background-color: #3f76fa; padding-top: 20px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -400,56 +385,151 @@ Home
                 </div>
                 <!-- Col end-->
                 <div class="col-lg-6 col-md-12 ts-padding text-lg-left text-center">
-                    <h2 class="column-title">25 Years of Experience</h2>
-                    <p class="intro-desc">We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains.</p>
-                    <div class="gap-20"></div>
-                    <div class="row facts-wrapper text-center">
-                        <div class="col-md-6">
-                            <div class="ts-facts"><span class="facts-icon"><i class="icon icon-chart2"></i></span>
-                                <div class="ts-facts-content">
-                                    <h4 class="ts-facts-num"><span class="counterUp">85</span></h4>
-                                    <p class="facts-desc">Business Growth %</p>
-                                </div>
-                            </div>
-                            <!-- Facts end-->
-                        </div>
-                        <!-- Col 1 end-->
-                        <div class="col-md-6">
-                            <div class="ts-facts"><span class="facts-icon"><i class="icon icon-invest"></i></span>
-                                <div class="ts-facts-content">
-                                    <h4 class="ts-facts-num"><span class="counterUp">467</span></h4>
-                                    <p class="facts-desc">Successful Investment</p>
-                                </div>
-                            </div>
-                            <!-- Facts end-->
-                        </div>
-                        <!-- Col 1 end-->
+                    <h2 class="column-title" style="color: #ffffff;">Market Overview</h2>
+
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "light",
+                                "dateRange": "12M",
+                                "showChart": true,
+                                "locale": "en",
+                                "largeChartUrl": "",
+                                "isTransparent": false,
+                                "showSymbolLogo": true,
+                                "width": "700",
+                                "height": "500",
+                                "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
+                                "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+                                "gridLineColor": "rgba(240, 243, 250, 1)",
+                                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                                "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                                "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                                "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+                                "tabs": [
+                                {
+                                    "title": "Indices",
+                                    "symbols": [
+                                        {
+                                            "s": "FOREXCOM:SPXUSD",
+                                            "d": "S&P 500"
+                                        },
+                                        {
+                                            "s": "FOREXCOM:NSXUSD",
+                                            "d": "Nasdaq 100"
+                                        },
+                                        {
+                                            "s": "FOREXCOM:DJI",
+                                            "d": "Dow 30"
+                                        },
+                                        {
+                                            "s": "INDEX:NKY",
+                                            "d": "Nikkei 225"
+                                        },
+                                        {
+                                            "s": "INDEX:DEU30",
+                                            "d": "DAX Index"
+                                        },
+                                        {
+                                            "s": "FOREXCOM:UKXGBP",
+                                            "d": "FTSE 100"
+                                        }
+                                    ],
+                                    "originalTitle": "Indices"
+                                },
+                                {
+                                    "title": "Commodities",
+                                    "symbols": [
+                                        {
+                                            "s": "CME_MINI:ES1!",
+                                            "d": "S&P 500"
+                                        },
+                                        {
+                                            "s": "CME:6E1!",
+                                            "d": "Euro"
+                                        },
+                                        {
+                                            "s": "COMEX:GC1!",
+                                            "d": "Gold"
+                                        },
+                                        {
+                                            "s": "NYMEX:CL1!",
+                                            "d": "Crude Oil"
+                                        },
+                                        {
+                                            "s": "NYMEX:NG1!",
+                                            "d": "Natural Gas"
+                                        },
+                                        {
+                                            "s": "CBOT:ZC1!",
+                                            "d": "Corn"
+                                        }
+                                    ],
+                                    "originalTitle": "Commodities"
+                                },
+                                {
+                                    "title": "Bonds",
+                                    "symbols": [
+                                        {
+                                            "s": "CME:GE1!",
+                                            "d": "Eurodollar"
+                                        },
+                                        {
+                                            "s": "CBOT:ZB1!",
+                                            "d": "T-Bond"
+                                        },
+                                        {
+                                            "s": "CBOT:UB1!",
+                                            "d": "Ultra T-Bond"
+                                        },
+                                        {
+                                            "s": "EUREX:FGBL1!",
+                                            "d": "Euro Bund"
+                                        },
+                                        {
+                                            "s": "EUREX:FBTP1!",
+                                            "d": "Euro BTP"
+                                        },
+                                        {
+                                            "s": "EUREX:FGBM1!",
+                                            "d": "Euro BOBL"
+                                        }
+                                    ],
+                                    "originalTitle": "Bonds"
+                                },
+                                {
+                                    "title": "Forex",
+                                    "symbols": [
+                                        {
+                                            "s": "FX:EURUSD"
+                                        },
+                                        {
+                                            "s": "FX:GBPUSD"
+                                        },
+                                        {
+                                            "s": "FX:USDJPY"
+                                        },
+                                        {
+                                            "s": "FX:USDCHF"
+                                        },
+                                        {
+                                            "s": "FX:AUDUSD"
+                                        },
+                                        {
+                                            "s": "FX:USDCAD"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
                     </div>
-                    <!--Row End -->
-                    <div class="gap-30"></div>
-                    <div class="row facts-wrapper text-center">
-                        <div class="col-md-6">
-                            <div class="ts-facts facts-col"><span class="facts-icon"><i class="icon icon-money-1"></i></span>
-                                <div class="ts-facts-content">
-                                    <h4 class="ts-facts-num"><span class="counterUp">2435</span></h4>
-                                    <p class="facts-desc">Cases Completed</p>
-                                </div>
-                            </div>
-                            <!-- Facts end-->
-                        </div>
-                        <!-- Col 1 end-->
-                        <div class="col-md-6">
-                            <div class="ts-facts"><span class="facts-icon"><i class="icon icon-deal"></i></span>
-                                <div class="ts-facts-content">
-                                    <h4 class="ts-facts-num"><span class="counterUp">139</span></h4>
-                                    <p class="facts-desc">Running Projects</p>
-                                </div>
-                            </div>
-                            <!-- Facts end-->
-                        </div>
-                        <!-- Col 1 end-->
-                    </div>
-                    <!-- Row End -->
+                    <!-- TradingView Widget END -->
+
                 </div>
                 <!-- Content Row 2 end-->
             </div>
@@ -458,6 +538,56 @@ Home
         <!-- Container end-->
     </section>
     <!-- Fun fact end-->
+
+    <section class="ts-features no-padding">
+        <div class="container-fluid">
+
+            <div class="section-title-vertical">
+                <h2 class="section-title">Our Approach</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 feature-box1" style="background-image: url({{ asset('main/images/features/feature1.jpg') }});">
+                    <div class="ts-feature text-center">
+                        <div class="ts-feature-info"><i class="icon icon-consut2"></i>
+                            <h3 class="ts-feature-title">Services For Individuals</h3>
+                            <p> * Pre- and Post-Retirement Planning<br>
+                                * Fee-Based Portfolio Management<br>
+                                * IRAs & Roth IRAs<br>
+                                * Fee-Based Investment Planning<br>
+                                * Wealth Transfer and Charitable Planning.</p>
+                        </div>
+                    </div>
+                    <!-- feature 1 end-->
+                </div>
+                <!-- Col end-->
+                <div class="col-lg-4 feature-box2" style="background-image: url({{ asset('main/images/features/feature2.jpg') }});">
+                    <div class="ts-feature text-center">
+                        <div class="ts-feature-info"><i class="icon icon-chart2"></i>
+                            <h3 class="ts-feature-title">Marketing growth</h3>
+                            <p>Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
+                                You have ideas, goals, and dreams.</p>
+                        </div>
+                    </div>
+                    <!-- feature 2 end-->
+                </div>
+                <!-- Col end-->
+                <div class="col-lg-4 feature-box3" style="background-image: url({{ asset('main/images/features/feature3.jpg') }});">
+                    <div class="ts-feature text-center">
+                        <div class="ts-feature-info"><i class="icon icon-clock3"></i>
+                            <h3 class="ts-feature-title">On time services</h3>
+                            <p>Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
+                                You have ideas, goals, and dreams.</p>
+                        </div>
+                    </div>
+                    <!-- feature 3 end-->
+                </div>
+                <!-- Col end-->
+            </div>
+            <!-- Row end-->
+        </div>
+        <!-- Container end-->
+    </section>
 
     <section class="ts-featured-cases">
         <div class="container">
