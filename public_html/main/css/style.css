@@ -4845,8 +4845,8 @@ p.panel-title a.collapsed {
 
 .ts-price-box {
   margin-top: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: -80px;
 }
 

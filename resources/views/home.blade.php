@@ -65,7 +65,8 @@ Home
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 about-desc">
-                    <h2 class="column-title title-small"><span>About us</span>Digital Trading Options</h2>
+                    <h2 class="column-title title-small"><span>About us</span>
+                        <span style="color: #0E608C; font-weight: bold;">Digital Trading Options</span></h2>
                     <p>We are a value-oriented investment firm that applies a private equity approach to investing in the public markets. Digital Trading Options manages long and Short term capital for Private investors, endowments, foundations, family, offices and other institutional investors.<br>
                         We invest in a concentrated long/short portfolio of equity securities of small to middle market companies. This strategy is the core of Digital Trading Options’s activities and has the flexibility to take advantage of the best public and private opportunities in this segment of the market. Digital Trading Options seeks to achieve investment gains through traditional trading with best rate in the the market.</p>
                     <div class="gap-15"></div>
@@ -88,7 +89,8 @@ Home
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h2 class="section-title"><span>Our Services</span>What We Do</h2>
+                    <h2 class="section-title"><span>Our Services</span>
+                        <strong style="color: #0E608C;">What We Do</strong></h2>
                 </div>
             </div>
             <!-- Title row end-->
@@ -253,12 +255,12 @@ Home
         </div>
     </section>
 
-    <section class="ts-services solid-bg" id="ts-services">
+    <section class="ts-services" id="ts-services" style="background-color: #dbe4fd;">
         <div class="container">
             <div class="row text-left">
                 <div class="col-lg-12">
                     <h2 class="section-title border-title-left">Investment Strategies</h2>
-                    <p>Digital Trading Options seeks to invest in assets that offer the potential for highly attractive risk adjusted returns. We will continue to focus primarily on:</p>
+                    <p style="color: #393939; font-weight: bold;">Digital Trading Options seeks to invest in assets that offer the potential for highly attractive risk adjusted returns. We will continue to focus primarily on:</p>
                 </div>
             </div>
             <!-- Title row end-->
@@ -371,7 +373,7 @@ Home
         <!-- Container end-->
     </section>
 
-    <section class="ts-facts-area no-padding" id="ts-facts-area" style="background-color: #3f76fa; padding-top: 20px;">
+    <section class="ts-facts-area no-padding" id="ts-facts-area" style="background-color: #dbe4fd; padding-top: 20px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -385,7 +387,7 @@ Home
                 </div>
                 <!-- Col end-->
                 <div class="col-lg-6 col-md-12 ts-padding text-lg-left text-center">
-                    <h2 class="column-title" style="color: #ffffff;">Market Overview</h2>
+                    <h2 class="column-title">Market Overview</h2>
 
                     <!-- TradingView Widget BEGIN -->
                     <div class="tradingview-widget-container">
@@ -539,12 +541,10 @@ Home
     </section>
     <!-- Fun fact end-->
 
-    <section class="ts-features no-padding">
+    <section class="ts-features no-padding" style="margin-top: 20px;">
         <div class="container-fluid">
 
-            <div class="section-title-vertical">
                 <h2 class="section-title">Our Approach</h2>
-            </div>
 
             <div class="row">
                 <div class="col-lg-4 feature-box1" style="background-image: url({{ asset('main/images/features/feature1.jpg') }});">
@@ -564,9 +564,10 @@ Home
                 <div class="col-lg-4 feature-box2" style="background-image: url({{ asset('main/images/features/feature2.jpg') }});">
                     <div class="ts-feature text-center">
                         <div class="ts-feature-info"><i class="icon icon-chart2"></i>
-                            <h3 class="ts-feature-title">Marketing growth</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
-                                You have ideas, goals, and dreams.</p>
+                            <h3 class="ts-feature-title">Asset Management Strategies</h3>
+                            <p> * Private Investment Management (PIM)<br>
+                                * Fee-Based Portfolio Management<br>
+                                * Tax-Efficient Investment Strategies </p>
                         </div>
                     </div>
                     <!-- feature 2 end-->
@@ -575,9 +576,10 @@ Home
                 <div class="col-lg-4 feature-box3" style="background-image: url({{ asset('main/images/features/feature3.jpg') }});">
                     <div class="ts-feature text-center">
                         <div class="ts-feature-info"><i class="icon icon-clock3"></i>
-                            <h3 class="ts-feature-title">On time services</h3>
-                            <p>Mutual funds pool money from many investors to purchase broad range of investments, such as stocks.
-                                You have ideas, goals, and dreams.</p>
+                            <h3 class="ts-feature-title">Services for Endowments and Foundations</h3>
+                            <p> * Investment Policy Analysis<br>
+                                * Retirement Plan Services<br>
+                                * Philanthropic-Donor Services </p>
                         </div>
                     </div>
                     <!-- feature 3 end-->
@@ -589,74 +591,169 @@ Home
         <!-- Container end-->
     </section>
 
-    <section class="ts-featured-cases">
+    <section id="call-to-action" class="call-to-action-bg bg-overlay">
         <div class="container">
-            <div class="section-title-vertical">
-                <h2 class="section-title">Featured Cases</h2>
-            </div>
-            <!-- Title row end-->
             <div class="row">
-                <div class="owl-carousel owl-theme featured-cases-slide" id="featured-cases-slide">
-                    <div class="item">
-                        <div class="featured-projects-content">
-                            <div class="featured-projects-text float-left">
-                                <h2 class="column-title"><span>Marketing Growth</span> Modern Woodman Ltd.</h2>
-                                <p class="intro-desc">A business strategy is the means by which it sets out to achieve its desired ends. You have ideas,
-                                    goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like
-                                    you and make your dream come true.</p>
-                                <p><a class="btn btn-primary" href="#"> Read More</a></p>
-                            </div>
-                            <div class="features-slider-img float-right">
-                                <img class="img-fluid" src="{{ asset('main/images/slider-small/featured-slider1.jpg') }}" alt="">
-                            </div>
-                        </div>
+                <div class="col-lg-12 align-self-center">
+                    <h3 class="call-to-action-title">Cryptocurrency Market Overview</h3>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                            {
+                                "width": "100%",
+                                "height": "400",
+                                "defaultColumn": "overview",
+                                "screener_type": "crypto_mkt",
+                                "displayCurrency": "USD",
+                                "colorTheme": "light",
+                                "locale": "en"
+                            }
+                        </script>
                     </div>
-                    <!-- Item 1 end-->
-                    <div class="item">
-                        <div class="featured-projects-content">
-                            <div class="featured-projects-text pull-left">
-                                <h2 class="column-title"><span>Tax Planning</span>Alpha Century Software Inc.</h2>
-                                <p class="intro-desc">A business strategy is the means by which it sets out to achieve its desired ends. You have ideas,
-                                    goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like
-                                    you and make your dream come true.</p>
-                                <p><a class="btn btn-primary" href="#"> Read More</a></p>
-                            </div>
-                            <div class="features-slider-img pull-right">
-                                <img src="{{ asset('main/images/slider-small/featured-slider2.jpg') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item 2 end-->
-                    <div class="item">
-                        <div class="featured-projects-content">
-                            <div class="featured-projects-text float-left">
-                                <h2 class="column-title"><span>Business Loan</span>Spider Microsystem</h2>
-                                <p class="intro-desc">A business strategy is the means by which it sets out to achieve its desired ends. You have ideas,
-                                    goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like
-                                    you and make your dream come true.</p>
-                                <p><a class="btn btn-primary" href="#"> Read More</a></p>
-                            </div>
-                            <div class="features-slider-img float-right">
-                                <img class="img-fluid" src="{{ asset('main/images/slider-small/featured-slider3.jpg') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item 3 end-->
+                    <!-- TradingView Widget END -->
                 </div>
-                <!-- Featured Projects slider end-->
             </div>
-            <!-- Content row end-->
         </div>
-        <!-- Container end-->
     </section>
-    <!-- Featured projects end-->
+
+    <section class="main-container" id="main-container" style="padding-top: 5px;">
+        <div class="ts-price-box">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h2 class="section-title"><span>Our</span>Investment Plans</h2>
+                    </div>
+                    <!-- Col End -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pricing-boxed">
+
+                            @foreach($packages as $package)
+                            <div class="single-price-box">
+                                <div class="pricing-plan" style="background-color: #ebf1ff; margin-bottom: 5px;">
+                                    <div class="pricing-header border-left" style="background-color: #FF8E00;">
+                                        <h2 class="plan-name">{{ $package->name }}</h2>
+                                        <h3 class="plan-price">
+                                            @if(!empty($package->min))
+                                                <p style="font-size: 18px;">Minimum: {{ '$'.number_format($package->min) }}</p>
+                                            @endif
+
+                                            @if(!empty($package->max))
+                                            <p style="font-size: 18px;">Maximum: {{ '$'.number_format($package->max) }}</p>
+                                            @else
+                                            <p style="font-size: 18px;">and above</p>
+                                            @endif
+                                        </h3>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        @if(!empty($package->roi))
+                                        <li style="font-size: 18px;">{{ $package->roi }}</li>
+                                        @endif
+
+                                        @if(!empty($package->referral_bonus))
+                                        <li style="font-size: 18px;">{{ $package->referral_bonus }}% Referral Bonus</li>
+                                        @endif
+
+                                        @if(!empty($package->expert_advice))
+                                            <li style="font-size: 18px;">{{ $package->expert_advice }}</li>
+                                        @endif
+                                    </ul>
+                                    <div>
+                                        <a target="_self" href="{{ route('register') }}" class="btn btn-primary">Sign up</a>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ts-testimonial-slide" class="ts-testimonial-slide solid-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial-slide owl-carousel owl-theme">
+                        <div class="row quote-item-area">
+                            <div class="col-md-5">
+                                <div class="quote-thumb">
+                                    <img class="quote-thumb-img" src="{{ asset('main/testimonial/aljazeera.png') }}">
+
+                                </div>
+                                <!-- Quote thumb end -->
+                            </div>
+                            <!-- Col end -->
+
+                            <div class="col-md-7">
+                                <div class="quote-item-content">
+                                    <h3 class="quote-name">Aljazeera Finance, 2019 </h3>
+                                    <p class="quote-message">
+                                        Digital Trading Options' Financial performance continues to rise against the market's down trend. They have proven to have a solid plan for investors.</p>
+                                </div>
+                                <!-- Quote content end -->
+                            </div>
+                            <!-- Col end -->
+                        </div>
+
+                        <div class="row quote-item-area">
+                            <div class="col-md-5">
+                                <div class="quote-thumb">
+                                    <img class="quote-thumb-img" src="{{ asset('main/testimonial/bbcuk.png') }}">
+
+                                </div>
+                                <!-- Quote thumb end -->
+                            </div>
+                            <!-- Col end -->
+
+                            <div class="col-md-7">
+                                <div class="quote-item-content">
+                                    <h3 class="quote-name">BBC News, UK.</h3>
+                                    <p class="quote-message">
+                                        Digital Trading Options has been the most attractive cryptocurrency and investment platform on the Forex market as at 2017. </p>
+                                </div>
+                                <!-- Quote content end -->
+                            </div>
+                            <!-- Col end -->
+                        </div>
+
+                        <div class="row quote-item-area">
+                            <div class="col-md-5">
+                                <div class="quote-thumb">
+                                    <img class="quote-thumb-img" src="{{ asset('main/testimonial/cnbc.png') }}">
+
+                                </div>
+                                <!-- Quote thumb end -->
+                            </div>
+                            <!-- Col end -->
+
+                            <div class="col-md-7">
+                                <div class="quote-item-content">
+                                    <h3 class="quote-name">CNBC International</h3>
+                                    <p class="quote-message">Digital Trading Options achieve 43% returns in revenue from Stocks, Cryptocurrencies and Forex Trading.</p>
+                                </div>
+                                <!-- Quote content end -->
+                            </div>
+                            <!-- Col end -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="quote-area bg-overlay overlay-color" id="quote-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 qutoe-form-inner-left">
                     <div class="quote_form">
-                        <h2 class="column-title title-white"><span>We are always ready</span> Request a call back</h2>
+                        <h2 class="column-title title-white"><span>We are always ready</span> Request Consultation</h2>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
@@ -696,7 +793,7 @@ Home
                 <div class="col-lg-6 align-self-center">
                     <div class="owl-carousel owl-theme testimonial-slide owl-dark" id="testimonial-slide">
                         <div class="item">
-                            <div class="quote-item quote-square"><span class="quote-text">The Bizipress loan has been  the most attractive loan products on the market, helping numerous businesses gain access to financing they would not be able to obtain conventionally and at extremely favorable rates and terms.</span>
+                            <div class="quote-item quote-square"><span class="quote-text">Digital Trading Options has been the most attractive Crypto trading and forex platform currently on the market, helping numerous businesses gain access to financing which they would not be able to obtain conventionally and at extremely favorable rates and terms.</span>
                                 <div class="quote-item-footer">
                                     {{--                                    <img class="testimonial-thumb" src="{{ asset('mainimages/clients/testimonial1.png') }}" alt="testimonial">--}}
                                     <div class="quote-item-info">
@@ -707,30 +804,7 @@ Home
                             <!-- Quote item end-->
                         </div>
                         <!-- Item 1 end-->
-                        <div class="item">
-                            <div class="quote-item quote-square"><span class="quote-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi aliquip consequat.</span>
-                                <div class="quote-item-footer">
-                                    <img class="testimonial-thumb" src="{{ asset('main/images/clients/testimonial2.png') }}" alt="testimonial">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Weldon Cash</h3><span class="quote-subtext">CFO, First Choice</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Quote item end-->
-                        </div>
-                        <!-- Item 2 end-->
-                        <div class="item">
-                            <div class="quote-item quote-square"><span class="quote-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi ut commodo consequat.</span>
-                                <div class="quote-item-footer">
-                                    <img class="testimonial-thumb" src="{{ asset('main/images/clients/testimonial3.png') }}" alt="testimonial">
-                                    <div class="quote-item-info">
-                                        <h3 class="quote-author">Minter Puchan</h3><span class="quote-subtext">Director, AKT</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Quote item end-->
-                        </div>
-                        <!-- Item 3 end-->
+
                     </div>
                     <!-- Testimonial carousel end-->
                 </div>
@@ -742,68 +816,25 @@ Home
     </section>
     <!-- Quote area end-->
 
-    <section class="news" id="news">
+    <section class="main-container">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h2 class="section-title"><span>Don't Miss</span>Our Latest News</h2>
-                </div>
+            <div class="section-title-vertical">
+                <h2 class="section-title">News and Updates</h2>
             </div>
+            <!-- Title row end-->
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="latest-post post-large">
-                        <div class="latest-post-media">
-                            <a class="latest-post-img" href="#">
-                                <img class="img-fluid" src="{{ asset('main/images/news/news1.jpg') }}" alt="img">
-                            </a><a class="post-cat" href="#">News</a>
-                            <div class="post-body"><span class="post-item-date">20 Nov, 2017</span>
-                                <h4 class="post-title"><a href="#">Spacex's interviewing process is rude as hell</a></h4><a class="btn btn-primary" href="#">Read More</a>
-                            </div>
-                            <!-- Post body end-->
-                        </div>
-                        <!-- Post media end-->
-                    </div>
-                    <!-- Latest post end-->
+                <div class="col-md-12">
+                    <div class="feedgrabbr_widget" id="fgid_71e82e89566823ac785c365ed"></div>
+                    <script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_71e82e89566823ac785c365ed");</script>
+                    <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
                 </div>
-                <!-- Col big news end-->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="latest-post">
-                                <div class="post-body"><a class="post-cat" href="#">News</a>
-                                    <h4 class="post-title"><a href="#">American Express finally ditches</a></h4><span class="post-item-date">20 Nov, 2017</span>
-                                    <div class="post-text">
-                                        <p>Earlier this year, the firm announced it had reached its goal of hiring.</p>
-                                        <div class="text-right"><a href="#">Read More <i class="fa fa-long-arrow-right"> </i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Latest post end-->
-                        </div>
-                        <!-- Col end-->
-                        <div class="col-lg-6">
-                            <div class="latest-post">
-                                <div class="post-body"><a class="post-cat" href="#">News</a>
-                                    <h4 class="post-title"><a href="#">Disney buys 21st Century Fox</a></h4><span class="post-item-date">20 Nov, 2017</span>
-                                    <div class="post-text">
-                                        <p>Earlier this year, the firm announced it had reached its goal of hiring.</p>
-                                        <div class="text-right"><a href="#">Read More <i class="fa fa-long-arrow-right"> </i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Latest post end-->
-                        </div>
-                        <!-- Col end-->
-                    </div>
-                    <!-- row end-->
-                </div>
-                <!-- Col small news end-->
+
             </div>
             <!-- Content row end-->
         </div>
         <!-- Container end-->
     </section>
-    <!-- News end-->
+    <!-- Featured projects end-->
 
     <section class="clients-area" id="clients-area">
         <div class="container">

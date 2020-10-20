@@ -14,10 +14,14 @@
      -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--
-     CSS
-     ==================================================
-     -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ asset('digital_trading_options_logoonly.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('digital_trading_options_logoonly.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('digital_trading_options_logoonly.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('digital_trading_options_logoonly.png') }}">
+
+    <!-- CSS ================================================== -->
     <!-- Bootstrap-->
     <link rel="stylesheet" href="{{ asset('main/css/bootstrap.min.css') }}">
     <!-- Animation-->
@@ -67,11 +71,15 @@
                                     <p class="info-title">info@digitaltradingoptions.com</p>
                                 </div>
                             </li>
-                            <li class="last"><span class="info-icon">
+                            <li class="info-icon">
+                                <span class="info-icon">
                                     <i class="icon icon-map-marker2"></i></span>
                                 <div class="info-wrapper">
                                     <p class="info-title">1010 Avenue, NY, USA</p>
                                 </div>
+                            </li>
+                            <li class="last" id="google_translate_element"><span class="info-icon">
+                                    <i class="icon icon-map-marker2"></i></span>
                             </li>
                         </ul>
                         <!-- Ul end-->
@@ -123,14 +131,32 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">Home</a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="" data-toggle="dropdown">
+                                        Company<i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="{{ url('about') }}">About us</a></li>
+                                        <li><a href="{{ url('terms') }}">Terms and Conditions</a></li>
+                                        <li><a href="{{ url('legal') }}">Legal</a></li>
+                                        <li><a href="{{ url('faq') }}">FAQ</a></li>
+                                        <li><a href="{{ url('certificates') }}">Certificates and Awards</a></li>
+                                    </ul>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('investments') }}">Investment plans</a></li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('about') }}">About us</a></li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('services') }}">Services</a></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('contact') }}">Contact us</a></li>
+
+                                <li class="nav-item" style="color: #0f3e68; font-weight: bold;">
+                                    <a class="nav-link" href="{{ route('register') }}">Sign up</a></li>
+
+                                <li class="nav-item" style="color: #0f3e68; font-weight: bold;">
+                                    <a class="nav-link" href="{{ route('login') }}">Login</a></li>
 
                             </ul>
                             <!--Nav ul end-->
@@ -168,7 +194,7 @@
                     <div class="col-lg-4 footer-box"><i class="icon icon-envelope"></i>
                         <div class="footer-box-content">
                             <h3>Mail Us</h3>
-                            <p>mail@example.com</p>
+                            <p>info@digitaltradingoptions.com</p>
                         </div>
                     </div>
                     <!-- Box 3 end-->
@@ -187,7 +213,6 @@
                                 <img src="{{ asset('digital_trading_options_logo.png') }}" alt="">
                             </a>
                         </div>
-                        <p>We are a awward winning multinational company. We believe in quality and standard worldwide.</p>
                         <div class="footer-social">
                             <ul>
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -285,6 +310,14 @@
     <script type="text/javascript" src="{{ asset('main/js/gmap3.js') }}"></script>
     <!-- Template custom-->
     <script type="text/javascript" src="{{ asset('main/js/custom.js') }}"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>
 <!--Body Inner end-->
 </body>

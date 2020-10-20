@@ -42,6 +42,10 @@ Route::get('faq', static function () {
     return view('faq');
 });
 
+Route::get('certificates', static function () {
+    return view('certificates');
+});
+
 Route::get('registration-complete', static function () {
     return view('registration-complete');
 });
