@@ -34,9 +34,9 @@ class HomeController extends Controller
 
         // Send Email user
         Mail::send('emails.users.recover-password', $data, static function ($message) use ($data) {
-            $message->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
             $message->to($data['email'], $data['name']);
-            $message->replyTo(env('MAIL_FROM_ADDRESS'), 'Digital Metrics Investment');
+            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
             $message->subject('Your Password');
         });
 
@@ -48,6 +48,28 @@ class HomeController extends Controller
     {
         $packages = InvestmentPackage::all();
         return view('investment-packages', compact('packages'));
+    }
+
+    public function contactForm(Request $request){
+
+        $input = $request->all();
+
+        $data = [
+            'name' => $input['name'],
+            'email' => $input['email'],
+            'email_message' => $input['email_message'],
+        ];
+
+        // Send Email Company
+        Mail::send('emails.contact-form', $data, static function ($message) use ($data) {
+            $message->from($data['email'], $data['name']);
+            $message->to('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->replyTo('noreply@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->subject('New Message From'. $data['name']);
+        });
+
+        Session::flash('success', 'Message Sent');
+        return redirect()->back();
     }
 
     public function home(){

@@ -71,16 +71,7 @@
                                     <p class="info-title">info@digitaltradingoptions.com</p>
                                 </div>
                             </li>
-                            <li class="info-icon">
-                                <span class="info-icon">
-                                    <i class="icon icon-map-marker2"></i></span>
-                                <div class="info-wrapper">
-                                    <p class="info-title">1010 Avenue, NY, USA</p>
-                                </div>
-                            </li>
-                            <li class="last" id="google_translate_element"><span class="info-icon">
-                                    <i class="icon icon-map-marker2"></i></span>
-                            </li>
+                            <li class="last" id="google_translate_element"></li>
                         </ul>
                         <!-- Ul end-->
                     </div>
@@ -227,12 +218,13 @@
                         <h3 class="widget-title">Useful Links</h3>
                         <ul class="list-dash">
                             <li><a href="{{ url('/') }}">Home</a></li>
-                            <li><a href="#">Investment Plans</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Legal</a></li>
+                            <li><a href="{{ url('investments') }}">Investment Plans</a></li>
+                            <li><a href="{{ url('about') }}">About us</a></li>
+                            <li><a href="{{ url('services') }}">Services</a></li>
+                            <li><a href="{{ url('contact') }}">Contact us</a></li>
+                            <li><a href="{{ url('terms') }}">Terms and Conditions</a></li>
+                            <li><a href="{{ url('legal') }}">Legal</a></li>
+                            <li><a href="{{ url('certifications') }}">Certifications and Awards</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-12W footer-widget">
@@ -261,9 +253,9 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="footer-menu">
                             <ul class="nav unstyled">
-                                <li><a href="#">Terms and Conditions</a></li>
-                                <li><a href="#">Legal</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="{{ url('terms') }}">Terms and Conditions</a></li>
+                                <li><a href="{{ url('legal') }}">Legal</a></li>
+                                <li><a href="{{ url('faq') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -320,6 +312,20 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>
 <!--Body Inner end-->
+
+<!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5f9158e117015e2aea6d5f99/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+<!--End of Tawk.to Script-->
 </body>
 
 </html>

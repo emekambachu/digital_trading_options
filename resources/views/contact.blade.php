@@ -5,50 +5,72 @@
 @endsection
 
 @section('contents')
-    <section id="page-title" class="page-title bg-overlay bg-overlay-dark bg-parallax">
-        <div class="bg-section">
-            <img src="{{ asset('header.jpg') }}" alt="Background" />
-        </div>
+    <div class="banner-area" id="banner-area" style="background-image:url({{ asset('header.jpg') }});">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="title title-6 text-center">
-                        <div class="title--heading">
-                            <h1>Contact us</h1>
-                        </div>
-                        <div class="clearfix"></div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="banner-heading">
+                        <h2 class="banner-title">Contact us</h2>
                         <ol class="breadcrumb">
                             <li><a href="{{ url('/') }}">Home</a></li>
-                            <li class="active">Contact us</li>
+                            <li>Contact us</li>
                         </ol>
                     </div>
                 </div>
+                <!-- Col end-->
             </div>
+            <!-- Row end-->
         </div>
-    </section>
+        <!-- Container end-->
+    </div>
 
-    <section id="contactInfo" class="contact contact-info bg-white text--center pt-90 pb-90">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="contact--info">
-                        <h3>Our Address</h3>
-                        <p>555 West 5th street, 35th Floor,<br> Los Angeles, California
-                        <a class="link--styled" href="#">Get Directions</a>
+    <section class="main-container" id="main-container">
+        <!-- container end-->
+        <div class="gap-60"></div>
+        <div class="ts-form" id="ts-form">
+            <div class="container">
+
+                @include('includes.alerts')
+
+                <h2 class="column-title title-small"><span>Send a</span>
+                    <span style="color: #0f3e68; font-weight: bold;">Message</span></h2>
+
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <form class="contact-form" action="{{ url('contact/send') }}" method="POST">
+                            @csrf
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control form-name" id="name" name="name"
+                                               placeholder="Full Name" type="text" required="">
+                                    </div>
+                                </div>
+                                <!-- Col end-->
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control form-email" id="email" name="email"
+                                               placeholder="Email" type="email" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control form-message required-field" name="email_message"
+                                                  id="message" placeholder="Message" rows="8" required></textarea>
+                                    </div>
+                                </div>
+                                <!-- Col 12 end-->
+                            </div>
+                            <!-- Form row end-->
+                            <div class="text-right">
+                                <button class="btn btn-primary tw-mt-30" type="submit">Send</button>
+                            </div>
+                        </form>
+                        <!-- Form end-->
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="contact--info">
-                        <h3>Our Email</h3>
-                        <p>Main Email : info@digitalmetricsinvest.com</p>
-                        <a class="link--styled" href="#">Send a Message</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="contact--info">
-                        <h3>Our Support</h3>
-                        <p>Main Support : support@digitalmetricsinvest.com</p>
-                        <a class="link--styled" href="#">Open a Ticket</a>
+                    <div class="col-lg-6">
+                        <div class="map" id="map"></div>
                     </div>
                 </div>
             </div>

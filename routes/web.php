@@ -50,6 +50,8 @@ Route::get('registration-complete', static function () {
     return view('registration-complete');
 });
 
+Route::post('contact/send', 'HomeController@contactForm');
+
 Auth::routes();
 
 // Password Recovery
