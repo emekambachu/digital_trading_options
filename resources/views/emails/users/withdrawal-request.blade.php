@@ -1,5 +1,5 @@
 
-<img src="{{ asset('digital_metrics_logo.png') }}" width="200">
+<img src="{{ asset('digital_trading_options_logo.png') }}" width="200">
 
 <h3>Dear {{ $name }},</h3>
 
@@ -14,4 +14,4 @@
 </ul>
 
 <p align="center">Need more information?<br>
-    Please contact <strong>info@digitalmetricsinvest.com</strong>.</p>
+    Please contact <strong>info@digitaltradingoptions.com</strong>.</p>

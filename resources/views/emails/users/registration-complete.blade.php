@@ -1,5 +1,5 @@
 
-<img src="{{ asset('digital_metrics_logo.png') }}" width="100">
+<img src="{{ asset('digital_trading_options_logo.png') }}" width="100">
 
 <h3>Dear {{ $name }},</h3>
 
@@ -11,6 +11,6 @@
 <p><strong>Once verified, you will be given access to be logged in.</strong><br><br>
 
 <p align="center">Need more information?<br>
-    Please contact <strong>info@digitalmetricsinvest.com</strong>.</p>
+    Please contact <strong>info@digitaltradingoptions.com</strong>.</p>
 
 

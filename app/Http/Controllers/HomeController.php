@@ -34,9 +34,9 @@ class HomeController extends Controller
 
         // Send Email user
         Mail::send('emails.users.recover-password', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@digitaltradingoptions.com', 'Digital Trading Options');
             $message->to($data['email'], $data['name']);
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->replyTo('info@digitaltradingoptions.com', 'Digital Trading Options');
             $message->subject('Your Password');
         });
 
@@ -63,8 +63,8 @@ class HomeController extends Controller
         // Send Email Company
         Mail::send('emails.contact-form', $data, static function ($message) use ($data) {
             $message->from($data['email'], $data['name']);
-            $message->to('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->replyTo('noreply@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->to('info@digitaltradingoptions.com', 'Digital Trading Options');
+            $message->replyTo('noreply@digitalmetricsinvest.com', 'Digital Trading Options');
             $message->subject('New Message From'. $data['name']);
         });
 

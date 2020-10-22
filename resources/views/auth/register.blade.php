@@ -1,7 +1,11 @@
 @extends('layouts.main')
 
 @section('title')
-    Login
+    Sign up
+@endsection
+
+@section('top-assets')
+    <script src="{{ asset('js/countries.js') }}" type="text/javascript"></script>
 @endsection
 
 @section('contents')
@@ -10,10 +14,10 @@
             <div class="row justify-content-center">
                 <div class="col">
                     <div class="banner-heading">
-                        <h2 class="banner-title">Contact us</h2>
+                        <h2 class="banner-title">Sign up</h2>
                         <ol class="breadcrumb">
                             <li><a href="{{ url('/') }}">Home</a></li>
-                            <li>Contact us</li>
+                            <li>Sign up</li>
                         </ol>
                     </div>
                 </div>
@@ -31,9 +35,6 @@
             <div class="container">
 
                 @include('includes.alerts')
-
-                <h2 class="column-title title-small">
-                    <span style="color: #0f3e68; font-weight: bold;">Login</span></h2>
 
                 <div class="row">
                     <div class="col-lg-12 col-12">

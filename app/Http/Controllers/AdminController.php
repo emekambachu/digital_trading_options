@@ -79,9 +79,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.users.verify-user', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@digitaltradingoptions.com', 'Digital Trading Options');
+            $message->to($data['email'], $data['name'])->cc('info@digitaltradingoptions.com');
+            $message->replyTo('info@digitaltradingoptions.com', 'Digital Trading Options');
             $message->subject($data['status'] === 'activated' ? 'Your Account has been activated' : 'Your Account has been deactivated');
         });
 
@@ -155,9 +155,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.fund-wallet', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@digitaltradingoptions.com', 'Digital Trading Options');
+            $message->to($data['email'], $data['name'])->cc('info@digitaltradingoptions.com');
+            $message->replyTo('info@digitaltradingoptions.com', 'Digital Trading Options');
             $message->subject('Credit Transfer of $' . number_format($data['amount']) . ' From Investment');
         });
 
@@ -198,9 +198,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.investments.approve-investment', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@digitaltradingoptions.com', 'Digital Trading Options');
+            $message->to($data['email'], $data['name'])->cc('info@digitaltradingoptions.com');
+            $message->replyTo('info@digitaltradingoptions.com', 'Digital Trading Options');
             $message->subject($data['status']);
         });
 
@@ -291,9 +291,9 @@ class AdminController extends Controller
         ];
 
         Mail::send('emails.approve-withdrawal', $data, static function ($message) use ($data) {
-            $message->from('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
-            $message->to($data['email'], $data['name'])->cc('info@digitalmetricsinvest.com');
-            $message->replyTo('info@digitalmetricsinvest.com', 'Digital Metrics Investment');
+            $message->from('info@digitaltradingoptions.com', 'Digital Trading Options');
+            $message->to($data['email'], $data['name'])->cc('info@digitaltradingoptions.com');
+            $message->replyTo('info@digitaltradingoptions.com', 'Digital Trading Options');
             $message->subject($data['status']);
         });
 

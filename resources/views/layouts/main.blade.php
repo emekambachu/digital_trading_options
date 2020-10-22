@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="{{ asset('main/css/style.css') }}">
     <!-- Responsive styles-->
     <link rel="stylesheet" href="{{ asset('main/css/responsive.css') }}">
+
+    @yield('top-assets')
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file.-->
     <!--if lt IE 9
      script(src='js/html5shiv.js')

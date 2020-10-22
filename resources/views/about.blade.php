@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="column-title title-small"><span>Our</span>Values</h2>
-                    <p>Digital Metrics Investment was founded on the principle of delivering superior long and short term returns at the lowest possible risk. DMI believes that having a world-class investor base of like-minded, high-quality organizations is key to investment success. The firm has an intense focus on building and cultivating a team oriented culture of always putting the client first, driving relentlessly to learn and excel and constantly striving for improvement.</p>
+                    <p>Digital Trading Options was founded on the principle of delivering superior long and short term returns at the lowest possible risk. DMI believes that having a world-class investor base of like-minded, high-quality organizations is key to investment success. The firm has an intense focus on building and cultivating a team oriented culture of always putting the client first, driving relentlessly to learn and excel and constantly striving for improvement.</p>
                     <div class="gap-15"></div>
                     <div class="row">
                         <div class="col-lg-6">

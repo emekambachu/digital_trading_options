@@ -57,8 +57,8 @@
 
         <div class="nav-logo align-self-center">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img alt="logo" src="{{ asset('digital_metrics_logo.png') }}" width="100">
-                <span class="navbar-brand-name">DMI</span></a>
+                <img alt="logo" src="{{ asset('digital_trading_options_logo.png') }}" width="100">
+                <span class="navbar-brand-name">DTO</span></a>
         </div>
 
         <ul class="navbar-item flex-row mr-auto">
@@ -175,7 +175,7 @@
             <ul class="navbar-nav theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('digital_metrics_logo.png') }}" class="navbar-logo" alt="logo">
+                        <img src="{{ asset('digital_trading_options_logo.png') }}" class="navbar-logo" alt="logo">
                     </a>
                 </li>
                 <li class="nav-item theme-text">

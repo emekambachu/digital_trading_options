@@ -52,6 +52,8 @@ Route::get('registration-complete', static function () {
 
 Route::post('contact/send', 'HomeController@contactForm');
 
+Route::get('github/deploy/{password}', 'GithubDeploymentController@run');
+
 Auth::routes();
 
 // Password Recovery
