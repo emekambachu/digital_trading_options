@@ -8,7 +8,7 @@
 
     <title>@yield('title') | Digital Metrics Investments </title>
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('digital_metrics_logoonly.png') }}"/>
+    <link rel="icon" type="image/x-icon" href="{{ asset('digital_trading_options_logoonly.png') }}"/>
     <link href="{{ asset('users/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
     <script src="{{ asset('users/assets/js/loader.js') }}"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -21,20 +21,6 @@
     <link href="{{ asset('users/plugins/apex/apexcharts.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('users/assets/css/dashboard/dash_1.css') }}" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/5ed3b23d8ee2956d73a63a0f/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
 </head>
 
 <body class="alt-menu sidebar-noneoverflow">
@@ -119,7 +105,7 @@
             <li class="nav-item dropdown user-profile-dropdown order-lg-0 order-1">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="user-profile-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media">
-                        <img src="/photos/{{!empty($user->image) ? $user->image : 'noimage.png'}}" class="img-fluid" alt="admin-profile">
+                        <img src="/photos/{{!empty($user->image) ? $user->image : 'noimage.png'}}" class="img-fluid">
                         <div class="media-body align-self-center">
                             <h6><span>Hi,</span> {{ $user->name }}</h6>
                         </div>
@@ -175,7 +161,7 @@
             <ul class="navbar-nav theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('digital_trading_options_logo.png') }}" class="navbar-logo" alt="logo">
+                        <img src="{{ asset('digital_trading_options_logoonly.png') }}" class="navbar-logo" alt="logo">
                     </a>
                 </li>
                 <li class="nav-item theme-text">
@@ -355,6 +341,20 @@
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5f9158e117015e2aea6d5f99/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 
