@@ -24,7 +24,7 @@
                     <script type="text/javascript">
                         new TradingView.widget(
                             {
-                                "width": 1500,
+                                "width": "100%",
                                 "height": 500,
                                 "symbol": "NASDAQ:AAPL",
                                 "interval": "D",
