@@ -43,8 +43,8 @@
 
         <div class="nav-logo align-self-center">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img alt="logo" src="{{ asset('digital_trading_options_logo.png') }}" width="100">
-                <span class="navbar-brand-name">DTO</span></a>
+                <img alt="logo" src="{{ asset('digital_trading_options_logoonly.png') }}" width="100">
+                <span class="navbar-brand-name"></span></a>
         </div>
 
         <ul class="navbar-item flex-row mr-auto">

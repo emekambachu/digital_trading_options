@@ -59,7 +59,7 @@
 
                             <div class="card-body">
                                 <p class="card-text"> Make payment using the bitcoin address below</p>
-                                <h5 class="card-title">1BxLSTsk4mgvspTmC3YPdEJts2JRJ9YzTL</h5>
+                                <h5 class="card-title">18yzE5bqvidaKohYJMgv­DoMRWteAhHQXFK</h5>
                             </div>
                             <img width="200" src="{{ asset('bitcoin_scan.jpeg') }}" class="card-img-top" alt="widget-card-2">
 
