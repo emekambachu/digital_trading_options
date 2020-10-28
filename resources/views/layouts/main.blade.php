@@ -110,7 +110,7 @@
                         <div class="navbar-brand navbar-header">
                             <div class="logo">
                                 <a href="{{ url('/') }}">
-                                    <img src="{{ asset('digital_trading_options_logo.png') }}" alt="">
+                                    <img src="{{ asset('digital_trading_options_logo.png') }}" width="200" alt="">
                                 </a>
                             </div>
                             <!-- logo end-->
@@ -203,7 +203,7 @@
                     <div class="col-lg-4 col-md-12 footer-widget footer-about">
                         <div class="footer-logo">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('digital_trading_options_logo.png') }}" alt="">
+                                <img src="{{ asset('digital_trading_options_logo.png') }}" width="200" alt="">
                             </a>
                         </div>
                         <div class="footer-social">
@@ -230,15 +230,15 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-12W footer-widget">
-                        <h3 class="widget-title">Subscribe</h3>
-                        <div class="newsletter-introtext">Don’t miss to subscribe to our new feeds, kindly fill the form below.</div>
-                        <form class="newsletter-form" id="newsletter-form" action="#" method="post">
-                            <div class="form-group">
-                                <input class="form-control form-control-lg" id="newsletter-form-email" type="email" name="email" placeholder="Email Address"
-                                       autocomplete="off">
-                                <button class="btn btn-primary"><i class="fa fa-paper-plane"></i></button>
-                            </div>
-                        </form>
+                        <h3 class="widget-title">Improve your Trading Strategy</h3>
+                        <ul class="list-dash">
+                            <li><a href="https://www.youtube.com/watch?v=zSzOFG356c0">
+                                    Is Cryptocurrency really a good investment? (Video)</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=mxlqVFhgv3k">
+                                    $20,000 a week with cryptocurrency (Video)</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=u-vrdPtZVXc">
+                                    The revolution of cryptocurrency (Video)</a></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- Content row end-->
@@ -250,7 +250,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="copyright-info"><span>Copyright © {{ date('Y') }} Digital Trading Options. All Rights Reserved.</span></div>
+                        <div class="copyright-info"><span>
+                                Copyright © {{ date('Y') }} Digital Trading Options. All Rights Reserved.</span></div>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="footer-menu">
@@ -271,7 +272,8 @@
     <!-- Footer end-->
 
     <div class="back-to-top affix" id="back-to-top" data-spy="affix" data-offset-top="10">
-        <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i>
+        <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
             <!-- icon end-->
         </button>
         <!-- button end-->

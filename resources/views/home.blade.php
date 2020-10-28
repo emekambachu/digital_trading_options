@@ -10,8 +10,8 @@ Home
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text animated">
-                        <h2 class="box-slide-title">WELCOME TO</h2>
-                        <h3 class="box-slide-sub-title">DIGITAL TRADING OPTIONS</h3>
+                        <h4 class="box-slide-title">WELCOME TO</h4>
+                        <h5 class="box-slide-sub-title">DIGITAL TRADING OPTIONS</h5>
                         <p class="box-slide-description">Enjoy the best rates from your Cryptocurrency Investments</p>
                         <p>
                             <a href="{{ route('register') }}" class="slider btn btn-primary">Sign up</a>
@@ -28,8 +28,8 @@ Home
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text animated">
-                        <h2 class="box-slide-title">We are the Leaders</h2>
-                        <h3 class="box-slide-sub-title">of the cryptocurrency Investment Industry</h3>
+                        <h4 class="box-slide-title">We are the Leaders</h4>
+                        <h5 class="box-slide-sub-title">of the cryptocurrency Investment Industry</h5>
                         <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking to manage your investment portfolio
                         </p>
                         <p>
@@ -46,8 +46,8 @@ Home
             <div class="container">
                 <div class="box-slider-content">
                     <div class="box-slider-text animated">
-                        <h2 class="box-slide-title">Tell us what you need</h2>
-                        <h3 class="box-slide-sub-title">We Care our Customers</h3>
+                        <h4 class="box-slide-title">Tell us what you need</h4>
+                        <h5 class="box-slide-sub-title">We Care our Customers</h5>
                         <p class="box-slide-description">Our Customer care team are ready to solve your financial problems via our live chat</p>
                         <p>
                             <a href="{{ url('contact') }}" class="slider btn btn-primary">Contact us</a>
@@ -208,47 +208,37 @@ Home
     <section id="call-to-action" class="call-to-action-bg bg-overlay">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 align-self-center">
+                <div class="col-lg-12 align-self-center">
                     <h3 class="call-to-action-title">Forex Cross Rates</h3>
 
-                    <div class="tradingview-widget-container" style="width: 1100px; height: 400px;">
-                        <iframe scrolling="no" allowtransparency="true" style="box-sizing: border-box; height: calc(368px); width: 1100px;" src="https://s.tradingview.com/embed-widget/forex-cross-rates/?locale=en#%7B%22width%22%3A1100%2C%22height%22%3A400%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22CHF%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%5D%2C%22isTransparent%22%3Afalse%2C%22colorTheme%22%3A%22light%22%2C%22utm_source%22%3A%22digitalmetricsinvest.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22forex-cross-rates%22%7D" frameborder="0"></iframe>
-
-                        <style>
-                            .tradingview-widget-copyright {
-                                font-size: 13px !important;
-                                line-height: 32px !important;
-                                text-align: center !important;
-                                vertical-align: middle !important;
-                                font-family: 'Trebuchet MS', Arial, sans-serif !important;
-                                color: #9db2bd !important;
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright">
+                            <a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank">
+                                <span class="blue-text"></span></a></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                            {
+                                "width": "100%",
+                                "height": "450",
+                                "currencies": [
+                                "EUR",
+                                "USD",
+                                "JPY",
+                                "GBP",
+                                "CHF",
+                                "AUD",
+                                "CAD",
+                                "NZD",
+                                "CNY"
+                            ],
+                                "isTransparent": false,
+                                "colorTheme": "light",
+                                "locale": "en"
                             }
-
-                            .tradingview-widget-copyright .blue-text {
-                                color: #2196f3 !important;
-                            }
-
-                            .tradingview-widget-copyright a {
-                                text-decoration: none !important;
-                                color: #9db2bd !important;
-                            }
-
-                            .tradingview-widget-copyright a:visited {
-                                color: #9db2bd !important;
-                            }
-
-                            .tradingview-widget-copyright a:hover .blue-text {
-                                color: #38acdb !important;
-                            }
-
-                            .tradingview-widget-copyright a:active .blue-text {
-                                color: #299dcd !important;
-                            }
-
-                            .tradingview-widget-copyright a:visited .blue-text {
-                                color: #2196f3 !important;
-                            }
-                        </style></div>
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
 
                 </div>
             </div>
@@ -379,7 +369,7 @@ Home
                 <div class="col-lg-6 col-md-12">
                     <div class="intro-video">
                         <img class="img-fluid" src="{{ asset('main/images/intro-video.jpg') }}" alt="">
-                        <a class="popup" href="https://www.youtube.com/embed/XhveHKJWnOQ?autoplay=1&amp;loop=1">
+                        <a class="popup" href="https://www.youtube.com/embed/FRSIXQv7Y7g?autoplay=1&amp;loop=1">
                             <div class="video-icon"><i class="icon icon-play"></i></div>
                         </a>
                     </div>
@@ -634,7 +624,7 @@ Home
                             @foreach($packages as $package)
                             <div class="single-price-box">
                                 <div class="pricing-plan" style="background-color: #ebf1ff; margin-bottom: 5px;">
-                                    <div class="pricing-header border-left" style="background-color: #FF8E00;">
+                                    <div class="pricing-header border-left" style="background-color: #2154CF;">
                                         <h2 class="plan-name">{{ $package->name }}</h2>
                                         <h3 class="plan-price">
                                             @if(!empty($package->min))
@@ -649,8 +639,19 @@ Home
                                         </h3>
                                     </div>
                                     <ul class="list-unstyled">
-                                        @if(!empty($package->roi))
-                                        <li style="font-size: 18px;">{{ $package->roi }}</li>
+                                        @if(!empty($package->option1))
+                                        <li style="font-size: 18px;">{{ $package->option1 }}
+                                            <i class="fa fa-check"></i></li>
+                                        @endif
+
+                                        @if(!empty($package->option2))
+                                            <li style="font-size: 18px;">{{ $package->option2 }}
+                                                <i class="fa fa-check"></i></li>
+                                        @endif
+
+                                        @if(!empty($package->option3))
+                                            <li style="font-size: 18px;">{{ $package->option3 }}
+                                                <i class="fa fa-check"></i></li>
                                         @endif
 
                                         @if(!empty($package->referral_bonus))
@@ -818,7 +819,7 @@ Home
 
     <section class="main-container">
         <div class="container">
-            <div class="section-title-vertical">
+            <div class="col-md-12">
                 <h2 class="section-title">News and Updates</h2>
             </div>
             <!-- Title row end-->
