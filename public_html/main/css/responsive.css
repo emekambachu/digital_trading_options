@@ -312,7 +312,7 @@
       margin-bottom: 40px;
    }
    section.ts-services {
-      padding-bottom: 45px;
+      padding-bottom: 25px;
    }
    .service-center-img {
       padding: 35px 125px 45px;
@@ -1118,7 +1118,7 @@
    }
    /* Slider */
    .box-slider-text {
-      max-width: 290px;
+      max-width: 270px;
    }
    .box-slide-sub-title {
       font-size: 20px;
