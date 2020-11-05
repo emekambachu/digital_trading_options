@@ -226,7 +226,7 @@
                             <li><a href="{{ url('contact') }}">Contact us</a></li>
                             <li><a href="{{ url('terms') }}">Terms and Conditions</a></li>
                             <li><a href="{{ url('legal') }}">Legal</a></li>
-                            <li><a href="{{ url('certifications') }}">Certifications and Awards</a></li>
+                            <li><a href="{{ url('certificates') }}">Certifications and Awards</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-12W footer-widget">
