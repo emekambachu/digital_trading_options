@@ -132,3 +132,6 @@ Route::post('admin/add-users-investments/{id}', ['uses' => 'AdminController@addU
 Route::get('admin/withdrawal-requests', 'AdminController@withdrawalRequests')->name('withdrawal-requests');
 // Admin Approve Withdrawals
 Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approveWithdrawal']);
+
+// Github Deployment
+Route::get('/github/deployment/{pass}', 'GithubDeploymentController@deploy');

@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Artisan;
 
 class GithubDeploymentController extends Controller
 {
-    public function run($passWord)
+    public function deploy($passWord)
     {
-        if($passWord !== "_@na_2020_restricted") {
+        if ($passWord !== "Xeddtech_1990") {
             return App::abort(403);
         }
         $cmd = 'cd ../ && git stash && git pull';
@@ -19,9 +19,12 @@ class GithubDeploymentController extends Controller
         $result = ob_get_clean();
         dump($output);
         dump($result);
-        //clear all cache and config
+        //migrate the data
         Artisan::call('route:clear');
+        dump(Artisan::output());
         Artisan::call('cache:clear');
+        dump(Artisan::output());
         Artisan::call('view:clear');
+        dump(Artisan::output());
     }
 }
