@@ -135,4 +135,3 @@ Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approve
 
 // Github Deployment
 Route::get('/github/deployment/{pass}', 'GithubDeploymentController@deploy');
-Route::post('/github/post/{pass}', 'GithubDeploymentController@postRunner');
