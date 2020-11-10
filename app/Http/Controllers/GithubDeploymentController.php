@@ -29,7 +29,7 @@ class GithubDeploymentController extends Controller
         dump(Artisan::output());
     }
 
-    public function postRunnner(Request $request, $passWord)
+    public function postRunner(Request $request, $passWord)
     {
         //ensure its an admin
         $data = $request->all();
