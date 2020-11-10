@@ -64,7 +64,7 @@
                             <li><span class="info-icon">
                                     <i class="icon icon-phone3"></i></span>
                                 <div class="info-wrapper">
-                                    <p class="info-title">(+9) 847-291-4353</p>
+                                    <p class="info-title">(+9) 847-291-4353 testing</p>
                                 </div>
                             </li>
                             <li><span class="info-icon">
