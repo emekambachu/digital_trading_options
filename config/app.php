@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Digital Trading Options'),
+    'mail_from' => env('MAIL_FROM_ADDRESS', 'info@digitaltradingoptions.com'),
 
     /*
     |--------------------------------------------------------------------------

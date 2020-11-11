@@ -38,8 +38,8 @@
                 <div class="row">
                     <div class="col-lg-7 col-12">
                         <p class="heading--desc">Hello <strong>{{ Session::get('name') }}</strong><br>
-                            Thanks you for taking the time to register on our trading platform.<br>
-                            Your account will be approved in 24hours and you can start trading.
+                            Thanks for taking your time to register on our trading platform. Your account has been activated, you can choose any of our investments packages so we will commence trading on your account immediately.<br>
+                            <a href="{{ route('login') }}"><strong>Login</strong></a> to start investing
                         </p>
                     </div>
 
