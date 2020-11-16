@@ -103,13 +103,23 @@ Route::post('admin/approve-users/{id}', ['uses' => 'AdminController@approveUser'
 // Delete User
 Route::post('admin/delete-users/{id}', ['uses' => 'AdminController@deleteUser']);
 
-//Fund User Page
+//Fund User Wallet
 Route::get('admin/fund-wallet/{id}',
     ['as'=>'admin.fund-wallet', 'uses'=>'AdminController@fundWalletPage']
 );
-
-// Fund User Form
 Route::post('admin/fund-wallet/{id}', ['uses' => 'AdminController@fundWallet']);
+
+//Add User Profit
+Route::get('admin/user/profit/{id}',
+    ['as'=>'admin.profit.page', 'uses'=>'AdminController@addProfitPage']
+);
+Route::post('admin/user/profit/{id}', ['as'=>'admin.profit.store', 'uses' => 'AdminController@addProfit']);
+
+//Add User Commission
+Route::get('admin/user/commission/{id}',
+    ['as'=>'admin.commission.page', 'uses'=>'AdminController@addCommissionPage']
+);
+Route::post('admin/user/commission/{id}', ['as'=>'admin.commission.store', 'uses' => 'AdminController@addCommission']);
 
 //Admin Manage Investments
 Route::get('admin/manage-investments', 'AdminController@manageInvestments')->name('manage-investments');

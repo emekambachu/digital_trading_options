@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-    <title>@yield('title') | Digital Metrics Investments </title>
+    <title>@yield('title') | Digital Trading Options </title>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('digital_trading_options_logoonly.png') }}"/>
     <link href="{{ asset('users/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
@@ -209,7 +209,6 @@
                     </a>
                 </li>
 
-
                 <li class="menu single-menu">
                     <a href="{{ url('users/account-settings') }}" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
@@ -274,8 +273,6 @@
             </script>
         </div>
         <!-- TradingView Widget END -->
-
-
 
     @yield('contents')
 

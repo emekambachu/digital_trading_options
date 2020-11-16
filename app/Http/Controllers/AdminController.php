@@ -165,6 +165,70 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+    public function addProfitPage($id){
+
+        $user = User::find($id);
+        return view('admin.add-profit', compact('user'));
+    }
+
+    public function addProfit(Request $request, $id){
+
+        $amount = $request->input('amount');
+        $description = $request->input('description');
+
+        // current date using laravel carbon
+        $now = Carbon::now();
+        $time = $now->toDayDateTimeString();
+
+        // get users
+        $user = User::find($id);
+
+        // get users wallet
+        $wallet = Wallet::find($user->wallet_id);
+
+        // Update User Wallet
+        $wallet->profit += $amount;
+        $wallet->save();
+
+        // add to transaction
+        Transaction::addTransaction($user->id, 0, $wallet->profit, $description);
+
+        Session::flash('success', 'Profit has been funded with $'.$amount);
+        return redirect()->back();
+    }
+
+    public function addCommissionPage($id){
+
+        $user = User::find($id);
+        return view('admin.add-commission', compact('user'));
+    }
+
+    public function addCommission(Request $request, $id){
+
+        $amount = $request->input('amount');
+        $description = $request->input('description');
+
+        // current date using laravel carbon
+        $now = Carbon::now();
+        $time = $now->toDayDateTimeString();
+
+        // get users
+        $user = User::find($id);
+
+        // get users wallet
+        $wallet = Wallet::find($user->wallet_id);
+
+        // Update User Wallet
+        $wallet->commission += $amount;
+        $wallet->save();
+
+        // add to transaction
+        Transaction::addTransaction($user->id, 0, $wallet->commission, $description);
+
+        Session::flash('success', 'Commission has been added with $'.$amount);
+        return redirect()->back();
+    }
+
     public function manageInvestments(){
         $investments = Investment::orderBy('created_at', 'desc')->paginate(12);
         return view('admin.manage-investments', compact('investments'));

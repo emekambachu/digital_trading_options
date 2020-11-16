@@ -49,6 +49,14 @@
                                                         <button class="btn btn-info btn-sm">Fund Wallet</button>
                                                     </a>
 
+                                                    <a href="{{ route('admin.profit.page', $user->id) }}">
+                                                        <button class="btn btn-info btn-sm">Add Profit</button>
+                                                    </a>
+
+                                                    <a href="{{ route('admin.commission.page', $user->id) }}">
+                                                        <button class="btn btn-info btn-sm">Add Commission</button>
+                                                    </a>
+
                                                     <a href="{{ url('admin/add-users-investments/'.$user->id) }}">
                                                         <button class="btn btn-info btn-sm">Add Investment</button>
                                                     </a>

@@ -90,6 +90,8 @@ class RegisterController extends Controller
         // Create Company Info
         $wallet = Wallet::create([
             'amount' => 0,
+            'profit' => 0,
+            'commission' => 0,
         ]);
 
         // Create User

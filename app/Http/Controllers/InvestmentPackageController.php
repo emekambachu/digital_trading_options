@@ -16,29 +16,29 @@ class InvestmentPackageController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
         $packages = InvestmentPackage::all();
-        return view('admin.investments-packages.index', compact('packages'));
+        return view('admin.investment-packages.index', compact('packages'));
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
-        return view('admin.investments-packages.create');
+        return view('admin.investment-packages.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
@@ -83,7 +83,7 @@ class InvestmentPackageController extends Controller
     public function edit($id)
     {
         $package = InvestmentPackage::find($id);
-        return view('admin.investments-packages.edit', compact('package'));
+        return view('admin.investment-packages.edit', compact('package'));
     }
 
     /**

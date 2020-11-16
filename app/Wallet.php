@@ -13,5 +13,7 @@ class Wallet extends Model
      */
     protected $fillable = [
         'amount',
+        'profit',
+        'commission',
     ];
 }
