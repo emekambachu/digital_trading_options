@@ -191,7 +191,7 @@ class AdminController extends Controller
         $wallet->save();
 
         // add to transaction
-        Transaction::addTransaction($user->id, 0, $wallet->profit, $description);
+//        Transaction::addTransaction($user->id, 0, $wallet->profit, $description);
 
         Session::flash('success', 'Profit has been funded with $'.$amount);
         return redirect()->back();
@@ -223,7 +223,7 @@ class AdminController extends Controller
         $wallet->save();
 
         // add to transaction
-        Transaction::addTransaction($user->id, 0, $wallet->commission, $description);
+//        Transaction::addTransaction($user->id, 0, $wallet->commission, $description);
 
         Session::flash('success', 'Commission has been updated to $'.$amount);
         return redirect()->back();
@@ -255,7 +255,7 @@ class AdminController extends Controller
         $wallet->save();
 
         // add to transaction
-        Transaction::addTransaction($user->id, 0, $wallet->bonus, $description);
+//        Transaction::addTransaction($user->id, 0, $wallet->bonus, $description);
 
         Session::flash('success', 'Bonus has been updated to $'.$amount);
         return redirect()->back();
