@@ -14,7 +14,7 @@
 
                         <div class="iq-card-header d-flex justify-content-between">
                             <div class="iq-header-title">
-                                <h4 class="card-title">Add commission to {{ $user->name }}'s Account</h4>
+                                <h4 class="card-title">Update Commission for {{ $user->name }}'s Account</h4>
                                 <p><strong>Current Balance:</strong> ${{ $user->wallet ? $user->wallet->commission : Null }}</p>
                             </div>
                         </div>
@@ -27,7 +27,9 @@
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationDefault01">Amount</label>
-                                        <input name="amount" type="number" class="form-control" id="validationDefault01" required="">
+                                        <input name="amount" type="number" class="form-control"
+                                               value="{{ $user->wallet ? $user->wallet->commission : Null }}"
+                                               id="validationDefault01" required="">
                                     </div>
                                 </div>
                                 <div class="form-row">

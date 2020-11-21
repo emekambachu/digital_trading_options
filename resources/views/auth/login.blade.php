@@ -10,7 +10,7 @@
             <div class="row justify-content-center">
                 <div class="col">
                     <div class="banner-heading">
-                        <h2 class="banner-title">Contact us</h2>
+                        <h2 class="banner-title">Login</h2>
                         <ol class="breadcrumb">
                             <li><a href="{{ url('/') }}">Home</a></li>
                             <li>Contact us</li>

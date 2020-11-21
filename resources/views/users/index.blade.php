@@ -43,7 +43,7 @@
                 <!-- TradingView Widget END -->
             </div>
 
-            <div class="col-md-3 col-md-3 col-sm-6 col-12 layout-spacing">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 layout-spacing">
                 <div class="widget widget-card-four">
                     <div class="widget-content">
                         <div class="w-content">
@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-md-3 col-sm-6 col-12 layout-spacing">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12 layout-spacing">
                 <div class="widget widget-card-four">
                     <div class="widget-content">
                         <div class="w-content">
@@ -95,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-md-3 col-sm-6 col-12 layout-spacing">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12 layout-spacing">
                 <div class="widget widget-card-four">
                     <div class="widget-content">
                         <div class="w-content">
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-md-3 col-sm-6 col-12 layout-spacing">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12 layout-spacing">
                 <div class="widget widget-card-four">
                     <div class="widget-content">
                         <div class="w-content">
@@ -133,6 +133,24 @@
 {{--                        <div class="progress">--}}
 {{--                            <div class="progress-bar bg-gradient-secondary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>--}}
 {{--                        </div>--}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6 col-12 layout-spacing">
+                <div class="widget widget-card-four">
+                    <div class="widget-content">
+                        <div class="w-content">
+                            <div class="">
+                                <div class="w-icon">
+                                    <img width="100" src="{{ asset('users/icons/line_chart.png') }}"/>
+                                </div>
+                            </div>
+                            <div class="w-info">
+                                <h6 class="value">$ {{ number_format($user->wallet->bonus) }}</h6>
+                                <p class="">Bonus</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

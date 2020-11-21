@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    Fund Wallet
+    Update Bonus
 @endsection
 
 @section('contents')
@@ -14,20 +14,22 @@
 
                         <div class="iq-card-header d-flex justify-content-between">
                             <div class="iq-header-title">
-                                <h4 class="card-title">Fund {{ $user->name }}'s Wallet</h4>
-                                <p><strong>Current Balance:</strong> ${{ $user->wallet->amount }}</p>
+                                <h4 class="card-title">Update {{ $user->name }}'s Bonus Account</h4>
+                                <p><strong>Current Balance:</strong> ${{ $user->wallet ? $user->wallet->bonus : Null }}</p>
                             </div>
                         </div>
 
                         @include('includes.alerts')
 
                         <div class="iq-card-body">
-                            <form method="post" action="{{ route('admin.wallet.fund', $user->id) }}">
+                            <form method="post" action="{{ route('admin.bonus.store', $user->id) }}">
                                 @csrf
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationDefault01">Amount</label>
-                                        <input name="amount" type="number" class="form-control" id="validationDefault01" required="">
+                                        <input name="amount" type="number" class="form-control"
+                                               value="{{ $user->wallet ? $user->wallet->bonus : Null }}"
+                                               id="validationDefault01" required="">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -38,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn brand-color" type="submit">Fund</button>
+                                    <button class="btn brand-color" type="submit">Add</button>
                                 </div>
                             </form>
                         </div>

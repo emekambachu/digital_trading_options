@@ -27,7 +27,9 @@
                                 <div class="form-row">
                                     <div class="col-md-6 mb-3">
                                         <label for="validationDefault01">Amount</label>
-                                        <input name="amount" type="number" class="form-control" id="validationDefault01" required="">
+                                        <input name="amount" type="number" class="form-control"
+                                               value="{{ $user->wallet ? $user->wallet->profit : Null }}"
+                                               id="validationDefault01" required="">
                                     </div>
                                 </div>
                                 <div class="form-row">

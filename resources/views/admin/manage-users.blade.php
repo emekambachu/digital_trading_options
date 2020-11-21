@@ -45,35 +45,45 @@
                                                 <td>{{ $user->created_at->format('d M Y') }}</td>
                                                 <td>{{ $user->is_active ? 'Active' : 'Blocked' }}</td>
                                                 <td>
-                                                    <a href="{{ url('admin/fund-wallet/'.$user->id) }}">
-                                                        <button class="btn btn-info btn-sm">Fund Wallet</button>
-                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="{{ url('admin/fund-wallet/'.$user->id) }}">
+                                                                <button class="btn btn-info btn-sm float-left m-1">Fund Wallet</button>
+                                                            </a>
 
-                                                    <a href="{{ route('admin.profit.page', $user->id) }}">
-                                                        <button class="btn btn-info btn-sm">Add Profit</button>
-                                                    </a>
+                                                            <a href="{{ route('admin.profit.page', $user->id) }}">
+                                                                <button class="btn btn-info btn-sm float-left m-1">Add Profit</button>
+                                                            </a>
 
-                                                    <a href="{{ route('admin.commission.page', $user->id) }}">
-                                                        <button class="btn btn-info btn-sm">Add Commission</button>
-                                                    </a>
+                                                            <a href="{{ route('admin.commission.page', $user->id) }}">
+                                                                <button class="btn btn-info btn-sm float-left m-1">Add Commission</button>
+                                                            </a>
 
-                                                    <a href="{{ url('admin/add-users-investments/'.$user->id) }}">
-                                                        <button class="btn btn-info btn-sm">Add Investment</button>
-                                                    </a>
+                                                            <a href="{{ route('admin.bonus.page', $user->id) }}">
+                                                                <button class="btn btn-info btn-sm float-left m-1">Add Bonus</button>
+                                                            </a>
 
-                                                    <form method="POST" action="{{ action('AdminController@approveUser', $user->id) }}">
-                                                        @csrf
-                                                        <button type="submit" class="btn btn-warning btn-sm">
-                                                            {{$user->is_active ? 'Block User' : 'Unblock User' }}
-                                                        </button>
-                                                    </form>
+                                                            <a href="{{ url('admin/add-users-investments/'.$user->id) }}">
+                                                                <button class="btn btn-info btn-sm float-left m-1">Add Investment</button>
+                                                            </a>
+                                                        </div>
 
-                                                    <form method="POST" action="{{ action('AdminController@deleteUser', $user->id) }}">
-                                                        @csrf
-                                                        <button type="submit" class="btn btn-dark btn-sm">
-                                                            Delete
-                                                        </button>
-                                                    </form>
+                                                        <div class="col-12">
+                                                            <form method="POST" action="{{ action('AdminController@approveUser', $user->id) }}">
+                                                                @csrf
+                                                                <button type="submit" class="btn btn-warning btn-sm float-left m-1">
+                                                                    {{$user->is_active ? 'Block User' : 'Unblock User' }}
+                                                                </button>
+                                                            </form>
+
+                                                            <form method="POST" action="{{ action('AdminController@deleteUser', $user->id) }}">
+                                                                @csrf
+                                                                <button type="submit" class="btn btn-danger btn-sm float-left">
+                                                                    Delete
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         @endforeach

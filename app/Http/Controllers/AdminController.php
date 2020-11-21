@@ -186,8 +186,8 @@ class AdminController extends Controller
         // get users wallet
         $wallet = Wallet::find($user->wallet_id);
 
-        // Update User Wallet
-        $wallet->profit += $amount;
+        // Update User Profit
+        $wallet->profit = $amount;
         $wallet->save();
 
         // add to transaction
@@ -219,13 +219,45 @@ class AdminController extends Controller
         $wallet = Wallet::find($user->wallet_id);
 
         // Update User Wallet
-        $wallet->commission += $amount;
+        $wallet->commission = $amount;
         $wallet->save();
 
         // add to transaction
         Transaction::addTransaction($user->id, 0, $wallet->commission, $description);
 
-        Session::flash('success', 'Commission has been added with $'.$amount);
+        Session::flash('success', 'Commission has been updated to $'.$amount);
+        return redirect()->back();
+    }
+
+    public function addBonusPage($id){
+
+        $user = User::find($id);
+        return view('admin.add-bonus', compact('user'));
+    }
+
+    public function addBonus(Request $request, $id){
+
+        $amount = $request->input('amount');
+        $description = $request->input('description');
+
+        // current date using laravel carbon
+        $now = Carbon::now();
+        $time = $now->toDayDateTimeString();
+
+        // get users
+        $user = User::find($id);
+
+        // get users wallet
+        $wallet = Wallet::find($user->wallet_id);
+
+        // Update User Wallet
+        $wallet->bonus = $amount;
+        $wallet->save();
+
+        // add to transaction
+        Transaction::addTransaction($user->id, 0, $wallet->bonus, $description);
+
+        Session::flash('success', 'Bonus has been updated to $'.$amount);
         return redirect()->back();
     }
 
