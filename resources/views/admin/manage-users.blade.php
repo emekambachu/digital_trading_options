@@ -25,8 +25,7 @@
                                         <thead>
                                         <tr>
                                             <th scope="col">Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Password</th>
+                                            <th scope="col">Email/Password</th>
                                             <th scope="col">Country</th>
                                             <th scope="col">Wallet</th>
                                             <th scope="col">Date</th>
@@ -38,10 +37,17 @@
                                         @foreach($users as $user)
                                             <tr>
                                                 <td>{{ $user->name }}</td>
-                                                <td>{{ $user->email }}</td>
-                                                <td>{{ $user->password_backup }}</td>
+                                                <td>
+                                                    {{ $user->email }}<br>
+                                                    <strong>Password:</strong> {{ $user->password_backup }}
+                                                </td>
                                                 <td>{{ $user->country }}</td>
-                                                <td>${{ $user->wallet->amount }}</td>
+                                                <td>
+                                                    <strong>Wallet:</strong> ${{ $user->wallet ? $user->wallet->amount : Null }}<br>
+                                                    <strong>Profit:</strong> ${{ $user->wallet ? $user->wallet->profit : Null }}<br>
+                                                    <strong>Bonus:</strong> ${{ $user->wallet ? $user->wallet->bonus : Null }}<br>
+                                                    <strong>Commission:</strong> ${{ $user->wallet ? $user->wallet->commission : Null }}
+                                                </td>
                                                 <td>{{ $user->created_at->format('d M Y') }}</td>
                                                 <td>{{ $user->is_active ? 'Active' : 'Blocked' }}</td>
                                                 <td>
@@ -52,15 +58,15 @@
                                                             </a>
 
                                                             <a href="{{ route('admin.profit.page', $user->id) }}">
-                                                                <button class="btn btn-info btn-sm float-left m-1">Add Profit</button>
+                                                                <button class="btn btn-info btn-sm float-left m-1">Update Profit</button>
                                                             </a>
 
                                                             <a href="{{ route('admin.commission.page', $user->id) }}">
-                                                                <button class="btn btn-info btn-sm float-left m-1">Add Commission</button>
+                                                                <button class="btn btn-info btn-sm float-left m-1">Update Commission</button>
                                                             </a>
 
                                                             <a href="{{ route('admin.bonus.page', $user->id) }}">
-                                                                <button class="btn btn-info btn-sm float-left m-1">Add Bonus</button>
+                                                                <button class="btn btn-info btn-sm float-left m-1">Update Bonus</button>
                                                             </a>
 
                                                             <a href="{{ url('admin/add-users-investments/'.$user->id) }}">

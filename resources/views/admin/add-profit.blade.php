@@ -14,7 +14,7 @@
 
                         <div class="iq-card-header d-flex justify-content-between">
                             <div class="iq-header-title">
-                                <h4 class="card-title">Add profit to {{ $user->name }}'s Account</h4>
+                                <h4 class="card-title">Update {{ $user->name }}'s Profit Account</h4>
                                 <p><strong>Current Balance:</strong> ${{ $user->wallet ? $user->wallet->profit : Null }}</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn brand-color" type="submit">Add</button>
+                                    <button class="btn brand-color" type="submit">Update</button>
                                 </div>
                             </form>
                         </div>

@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn brand-color" type="submit">Add</button>
+                                    <button class="btn brand-color" type="submit">Update</button>
                                 </div>
                             </form>
                         </div>
