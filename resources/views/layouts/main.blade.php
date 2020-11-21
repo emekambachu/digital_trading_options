@@ -180,7 +180,7 @@
                     <div class="col-lg-4 footer-box"><i class="icon icon-phone3"></i>
                         <div class="footer-box-content">
                             <h3>Call Us</h3>
-                            <p>(+87) 847-291-4353</p>
+                            <p>+1 (401) 217-9879</p>
                         </div>
                     </div>
                     <!-- Box 2 end-->
