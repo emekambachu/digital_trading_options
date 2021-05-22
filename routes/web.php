@@ -149,4 +149,4 @@ Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approve
 
 // Github Deployment
 // Don't forget to disable csrf in Http/Middleware/VerifyCsrfToken
-Route::post('github/deployment', 'GithubDeploymentController@deploy');
+Route::post('github/deploy', 'GithubDeploymentController@deploy');
