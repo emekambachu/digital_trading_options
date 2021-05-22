@@ -148,4 +148,5 @@ Route::get('admin/withdrawal-requests', 'AdminController@withdrawalRequests')->n
 Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approveWithdrawal']);
 
 // Github Deployment
+// Don't forget to disable csrf in Http/Middleware/VerifyCsrfToken
 Route::post('github/deployment', 'GithubDeploymentController@deploy');
