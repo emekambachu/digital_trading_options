@@ -14,35 +14,25 @@ class GithubDeploymentController extends Controller
         if ($passWord !== "Xeddtech_1990") {
             return App::abort(403);
         }
-        $cmd = 'cd ../ && git stash && git pull';
-        ob_start();
-        exec($cmd . " 2>&1", $output, $status);
-        $result = ob_get_clean();
-        dump($output);
-        dump($result);
-        //migrate the data
-        Artisan::call('route:clear');
-        dump(Artisan::output());
-        Artisan::call('cache:clear');
-        dump(Artisan::output());
-        Artisan::call('view:clear');
-        dump(Artisan::output());
-    }
-
-    public function postRunner(Request $request, $passWord)
-    {
-        //ensure its an admin
-        $data = $request->all();
-        if ($passWord !== "Xeddtech_1990") {
-            return App::abort(403);
+        $commands = array(
+            'echo $PWD',
+            'whoami',
+            'git reset --hard HEAD',
+            'git pull',
+            'git status',
+            'git submodule sync',
+            'git submodule update',
+            'git submodule status',
+        );
+        // Run the commands for output
+        $output = '';
+        foreach($commands AS $command){
+            // Run it
+            $tmp = exec($command);
+            // Output
+            $output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
+            $output .= htmlentities(trim($tmp)) . "\n";
         }
-        if (!isset($data['cmd'])) {
-            return App::abort(403);
-        }
-        ob_start();
-        exec("cd ../ && {$data['cmd']} 2>&1", $output, $status);
-        $result = ob_get_clean();
-        dump($output);
-        dump($result);
+        return $output;
     }
 }
