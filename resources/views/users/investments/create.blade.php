@@ -58,10 +58,10 @@
                         <div class="card component-card_2">
 
                             <div class="card-body">
-                                <p class="card-text"> Make payment using the bitcoin address below</p>
-                                <h5 class="card-title">18yzE5bqvidaKohYJMgv­DoMRWteAhHQXFK</h5>
+                                <p class="card-text"> Make payment using the Bitcoin(BTC) address below</p>
+                                <h5 class="card-title">13PAfkbSGpgmvaFHnrLG1nq3nnAF3qt33V</h5>
                             </div>
-                            <img width="200" src="{{ asset('bitcoin_scan.jpeg') }}" class="card-img-top" alt="widget-card-2">
+{{--                            <img width="200" src="{{ asset('bitcoin_scan.jpeg') }}" class="card-img-top" alt="widget-card-2">--}}
 
                         </div>
 
