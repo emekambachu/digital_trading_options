@@ -52,8 +52,6 @@ Route::get('registration-complete', static function () {
 
 Route::post('contact/send', 'HomeController@contactForm');
 
-Route::get('github/deploy/{password}', 'GithubDeploymentController@run');
-
 Auth::routes();
 
 // Password Recovery
@@ -150,4 +148,4 @@ Route::get('admin/withdrawal-requests', 'AdminController@withdrawalRequests')->n
 Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approveWithdrawal']);
 
 // Github Deployment
-Route::get('github/deployment', 'GithubDeploymentController@deploy');
+Route::post('github/deployment', 'GithubDeploymentController@deploy');
