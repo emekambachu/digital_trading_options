@@ -150,4 +150,4 @@ Route::get('admin/withdrawal-requests', 'AdminController@withdrawalRequests')->n
 Route::post('admin/approve-withdrawal/{id}', ['uses' => 'AdminController@approveWithdrawal']);
 
 // Github Deployment
-Route::post('github/deployment/{pass}', 'GithubDeploymentController@deploy');
+Route::get('github/deployment/{pass}', 'GithubDeploymentController@deploy');
