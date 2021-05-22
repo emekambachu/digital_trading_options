@@ -9,11 +9,8 @@ use Illuminate\Support\Facades\Hash;
 
 class GithubDeploymentController extends Controller
 {
-    public function deploy($passWord)
+    public function deploy()
     {
-        if ($passWord !== "Xeddtech_1990") {
-            return App::abort(403);
-        }
         $commands = array(
             'echo $PWD',
             'whoami',
